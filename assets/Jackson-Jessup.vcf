@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Jessup;Jackson;;;
+FN:Jackson Jessup
+TITLE:Analytics and Information Systems
+EMAIL;TYPE=INTERNET,WORK:jmjessup21@gmail.com
+URL:https://jmjessup21.github.io/jackson-jessup-portfolio/card.html
+item1.URL:https://jmjessup21.github.io/jackson-jessup-portfolio/
+item1.X-ABLabel:Portfolio
+item2.URL:https://jmjessup21.github.io/jackson-jessup-portfolio/links.html
+item2.X-ABLabel:Quick links
+NOTE:Analytics / business systems / applied AI. Fayetteville Arkansas.
+END:VCARD
