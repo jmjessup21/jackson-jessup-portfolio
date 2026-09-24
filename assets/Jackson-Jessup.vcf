@@ -2,12 +2,14 @@ BEGIN:VCARD
 VERSION:3.0
 N:Jessup;Jackson;;;
 FN:Jackson Jessup
-TITLE:Analytics and Information Systems
+TITLE:Data and BI Analyst
 EMAIL;TYPE=INTERNET,WORK:jmjessup21@gmail.com
 URL:https://jmjessup21.github.io/jackson-jessup-portfolio/card.html
 item1.URL:https://jmjessup21.github.io/jackson-jessup-portfolio/
 item1.X-ABLabel:Portfolio
 item2.URL:https://jmjessup21.github.io/jackson-jessup-portfolio/links.html
 item2.X-ABLabel:Quick links
-NOTE:Analytics / business systems / applied AI. Fayetteville Arkansas.
+NOTE:Data and BI analyst. 30+ dashboards shipped. Fayetteville AR; open to Nashville and remote roles.
+item3.URL:https://github.com/jmjessup21
+item3.X-ABLabel:GitHub
 END:VCARD
