@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 960" role="img" aria-labelledby="title desc">
+<title id="title">Reeves Road — Lower level dimensional schematic</title>
+<desc id="desc">Inferred layout constrained to a listing-reported total of 4467 square feet. Not measured or construction-ready.</desc>
+<style>text{font-family:Arial,sans-serif;fill:#413b30}.room{font-size:11px;font-weight:bold}.dim{font-size:10px;fill:#726959}.small{font-size:12px}.title{font-size:29px;font-family:Georgia,serif}.line{stroke:#4d4638;stroke-width:2}.wall{stroke:#51483a;stroke-width:4.35;stroke-linecap:butt}</style>
+<defs><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0,8 L8,0" stroke="#c4baaa" stroke-width=".5"/></pattern></defs>
+<rect width="1200" height="960" fill="#faf7ef"/>
+<text x="58" y="52" class="small">REFRAME / 13425 REEVES ROAD / SCHEMATIC 02</text><text x="58" y="95" class="title">Lower level · dimensional study</text>
+<text x="58" y="124" class="small">INFERRED DIMENSIONS — NOT A SURVEY · SI meters · Front of house at bottom (not geographic north)</text>
+<text x="58" y="159" class="small">Proposed living area: 275.00 m² / 2,960.1 sq ft · Both levels: 4,467.0 sq ft</text>
+<rect x="485" y="299" width="217.5" height="214.60000000000002" fill="#e4d6bc" stroke="#c0b5a0" stroke-dasharray=""/>
+<rect x="340" y="299" width="145" height="214.60000000000002" fill="#e4d6bc" stroke="#c0b5a0" stroke-dasharray=""/>
+<rect x="340" y="241" width="130.5" height="58" fill="#e4d6bc" stroke="#c0b5a0" stroke-dasharray=""/>
+<rect x="340" y="574.5" width="145" height="130.5" fill="#e4d6bc" stroke="#c0b5a0" stroke-dasharray=""/>
+<rect x="340" y="513.6" width="87" height="60.89999999999999" fill="#e4d6bc" stroke="#c0b5a0" stroke-dasharray=""/>
+<rect x="427" y="513.6" width="58" height="60.89999999999999" fill="#e4d6bc" stroke="#c0b5a0" stroke-dasharray=""/>
+<rect x="485" y="513.6" width="185.60000000000002" height="191.39999999999998" fill="#f4eddf" stroke="#c0b5a0" stroke-dasharray=""/>
+<rect x="485" y="641.2" width="58" height="63.800000000000004" fill="#ebe7df" stroke="#c0b5a0" stroke-dasharray="4 3"/>
+<rect x="670.6" y="574.5" width="121.79999999999998" height="130.5" fill="#e4d6bc" stroke="#c0b5a0" stroke-dasharray=""/>
+<rect x="792.4" y="574.5" width="98.60000000000001" height="130.5" fill="#ebe7df" stroke="#c0b5a0" stroke-dasharray="4 3"/>
+<rect x="670.6" y="513.6" width="118.89999999999999" height="60.89999999999999" fill="#f4eddf" stroke="#c0b5a0" stroke-dasharray=""/>
+<rect x="702.5" y="444" width="87.0" height="69.60000000000001" fill="#ebe7df" stroke="#c0b5a0" stroke-dasharray="4 3"/>
+<rect x="789.5" y="444" width="101.5" height="130.5" fill="#e4d6bc" stroke="#c0b5a0" stroke-dasharray=""/>
+<rect x="702.5" y="299" width="188.5" height="145" fill="#e4d6bc" stroke="#c0b5a0" stroke-dasharray=""/>
+<rect x="79" y="415" width="261" height="290" fill="#f4f1eb" stroke="#c0b5a0" stroke-dasharray="4 3"/>
+<rect x="470.5" y="235.20000000000005" width="420.5" height="63.79999999999998" fill="#f4f1eb" stroke="#c0b5a0" stroke-dasharray="4 3"/>
+<rect x="485" y="705" width="406" height="52.2" fill="#f4f1eb" stroke="#c0b5a0" stroke-dasharray="4 3"/>
+<rect x="601" y="531" width="69.60000000000001" height="100.05000000000001" fill="#ded2be" stroke="#c0b5a0" stroke-dasharray=""/>
+<path d="M601,596.25 H670.6" stroke="#9e917c" stroke-width="1"/>
+<path d="M601,589.0 H670.6" stroke="#9e917c" stroke-width="1"/>
+<path d="M601,581.75 H670.6" stroke="#9e917c" stroke-width="1"/>
+<path d="M601,574.5 H670.6" stroke="#9e917c" stroke-width="1"/>
+<path d="M601,567.25 H670.6" stroke="#9e917c" stroke-width="1"/>
+<path d="M601,560.0 H670.6" stroke="#9e917c" stroke-width="1"/>
+<path d="M601,552.75 H670.6" stroke="#9e917c" stroke-width="1"/>
+<path d="M601,545.5 H670.6" stroke="#9e917c" stroke-width="1"/>
+<path d="M601,538.25 H670.6" stroke="#9e917c" stroke-width="1"/>
+<path d="M601,531.0 H670.6" stroke="#9e917c" stroke-width="1"/>
+<path d="M340.0,705.0 L369.0,705.0" class="wall"/>
+<path d="M369.0,705.0 L438.6,705.0" class="line"/>
+<path d="M438.6,705.0 L557.5,705.0" class="wall"/>
+<path d="M609.7,705.0 L690.9,705.0" class="wall"/>
+<path d="M690.9,705.0 L763.4,705.0" class="line"/>
+<path d="M763.4,705.0 L815.5999999999999,705.0" class="wall"/>
+<path d="M815.5999999999999,705.0 L867.8,705.0" class="line"/>
+<path d="M867.8,705.0 L891.0,705.0" class="wall"/>
+<path d="M891.0,705.0 L891.0,673.1" class="wall"/>
+<path d="M891.0,673.1 L891.0,626.7" class="line"/>
+<path d="M891.0,626.7 L891.0,513.6" class="wall"/>
+<path d="M891.0,513.6 L891.0,473.0" class="line"/>
+<path d="M891.0,473.0 L891.0,397.6" class="wall"/>
+<path d="M891.0,397.6 L891.0,333.79999999999995" class="line"/>
+<path d="M891.0,333.79999999999995 L891.0,299.0" class="wall"/>
+<path d="M340.0,705.0 L340.0,565.8" class="wall"/>
+<path d="M340.0,533.9 L340.0,409.20000000000005" class="wall"/>
+<path d="M340.0,409.20000000000005 L340.0,359.90000000000003" class="line"/>
+<path d="M340.0,359.90000000000003 L340.0,299.0" class="wall"/>
+<path d="M470.5,299.0 L490.8,299.0" class="wall"/>
+<path d="M519.8,299.0 L534.3,299.0" class="wall"/>
+<path d="M534.3,299.0 L667.7,299.0" class="line"/>
+<path d="M667.7,299.0 L737.3,299.0" class="wall"/>
+<path d="M737.3,299.0 L824.3,299.0" class="line"/>
+<path d="M824.3,299.0 L891.0,299.0" class="wall"/>
+<path d="M340.0,299.0 L340.0,291.75" class="wall"/>
+<path d="M340.0,291.75 L340.0,248.25" class="line"/>
+<path d="M340.0,248.25 L340.0,241.0" class="wall"/>
+<path d="M340.0,241.0 L353.05,241.0" class="wall"/>
+<path d="M353.05,241.0 L457.45,241.0" class="line"/>
+<path d="M457.45,241.0 L470.5,241.0" class="wall"/>
+<path d="M470.5,299.0 L470.5,291.75" class="wall"/>
+<path d="M470.5,291.75 L470.5,248.25" class="line"/>
+<path d="M470.5,248.25 L470.5,241.0" class="wall"/>
+<path d="M485.0,705.0 L485.0,644.1" class="wall"/>
+<path d="M485.0,583.2 L485.0,574.5" class="wall"/>
+<path d="M485.0,641.2 L502.4,641.2" class="wall"/>
+<path d="M527.05,641.2 L543.0,641.2" class="wall"/>
+<path d="M543.0,705.0 L543.0,641.2" class="wall"/>
+<path d="M340.0,574.5 L438.6,574.5" class="wall"/>
+<path d="M470.5,574.5 L485.0,574.5" class="wall"/>
+<path d="M427.0,574.5 L427.0,560.0" class="wall"/>
+<path d="M427.0,528.1 L427.0,513.6" class="wall"/>
+<path d="M340.0,513.6 L366.1,513.6" class="wall"/>
+<path d="M398.0,513.6 L437.15,513.6" class="wall"/>
+<path d="M469.05,513.6 L485.0,513.6" class="wall"/>
+<path d="M485.0,574.5 L485.0,560.0" class="wall"/>
+<path d="M485.0,528.1 L485.0,513.6" class="wall"/>
+<path d="M485.0,513.6 L485.0,500.55" class="wall"/>
+<path d="M485.0,346.85 L485.0,299.0" class="wall"/>
+<path d="M485.0,513.6 L490.8,513.6" class="wall"/>
+<path d="M586.5,513.6 L601.0,513.6" class="wall"/>
+<path d="M690.9,513.6 L702.5,513.6" class="wall"/>
+<path d="M670.6,705.0 L670.6,681.8" class="wall"/>
+<path d="M670.6,649.9 L670.6,574.5" class="wall"/>
+<path d="M792.4,705.0 L792.4,574.5" class="wall"/>
+<path d="M670.6,574.5 L702.5,574.5" class="wall"/>
+<path d="M734.4000000000001,574.5 L809.8,574.5" class="wall"/>
+<path d="M841.7,574.5 L891.0,574.5" class="wall"/>
+<path d="M789.5,574.5 L789.5,558.55" class="wall"/>
+<path d="M789.5,526.65 L789.5,444.0" class="wall"/>
+<path d="M702.5,513.6 L725.7,513.6" class="wall"/>
+<path d="M757.6,513.6 L789.5,513.6" class="wall"/>
+<path d="M702.5,444.0 L725.7,444.0" class="wall"/>
+<path d="M757.6,444.0 L821.4000000000001,444.0" class="wall"/>
+<path d="M853.3,444.0 L891.0,444.0" class="wall"/>
+<path d="M702.5,513.6 L702.5,342.5" class="wall"/>
+<path d="M702.5,307.70000000000005 L702.5,299.0" class="wall"/>
+<text x="593.75" y="401.29999999999995" text-anchor="middle" class="room">Great room</text>
+<text x="593.75" y="420.29999999999995" text-anchor="middle" class="dim">7.50 × 7.40 m</text>
+<text x="412.5" y="401.29999999999995" text-anchor="middle" class="room">Kitchen</text>
+<text x="412.5" y="420.29999999999995" text-anchor="middle" class="dim">5.00 × 7.40 m</text>
+<text x="405.25" y="265.0" text-anchor="middle" class="room">Breakfast nook</text>
+<text x="405.25" y="284.0" text-anchor="middle" class="dim">4.50 × 2.00 m</text>
+<text x="412.5" y="634.75" text-anchor="middle" class="room">Dining room</text>
+<text x="412.5" y="653.75" text-anchor="middle" class="dim">5.00 × 4.50 m</text>
+<text x="383.5" y="539.05" text-anchor="middle" class="room">Laundry</text>
+<text x="383.5" y="558.05" text-anchor="middle" class="dim">3.00 × 2.10 m</text>
+<text x="456.0" y="539.05" text-anchor="middle" class="room">Pantry</text>
+<text x="456.0" y="558.05" text-anchor="middle" class="dim">2.00 × 2.10 m</text>
+<text x="572" y="607.2" text-anchor="middle" class="room">Entry / stair hall</text>
+<text x="572" y="626.2" text-anchor="middle" class="dim">6.40 × 6.60 m</text>
+<text x="514.0" y="668.1" text-anchor="middle" class="room">Powder</text>
+<text x="514.0" y="681.1" text-anchor="middle" class="room">room</text>
+<text x="514.0" y="700.1" text-anchor="middle" class="dim">2.00 × 2.20 m</text>
+<text x="731.5" y="634.75" text-anchor="middle" class="room">Office / library</text>
+<text x="731.5" y="653.75" text-anchor="middle" class="dim">4.20 × 4.50 m</text>
+<text x="841.7" y="634.75" text-anchor="middle" class="room">Unpictured</text>
+<text x="841.7" y="647.75" text-anchor="middle" class="room">bedroom</text>
+<text x="841.7" y="666.75" text-anchor="middle" class="dim">3.40 × 4.50 m</text>
+<text x="730.05" y="539.05" text-anchor="middle" class="room">Suite hall</text>
+<text x="730.05" y="558.05" text-anchor="middle" class="dim">4.10 × 2.10 m</text>
+<text x="746.0" y="473.8" text-anchor="middle" class="room">Suite closet</text>
+<text x="746.0" y="492.8" text-anchor="middle" class="dim">3.00 × 2.40 m</text>
+<text x="840.25" y="504.25" text-anchor="middle" class="room">Primary bath</text>
+<text x="840.25" y="523.25" text-anchor="middle" class="dim">3.50 × 4.50 m</text>
+<text x="796.75" y="366.5" text-anchor="middle" class="room">Primary bedroom</text>
+<text x="796.75" y="385.5" text-anchor="middle" class="dim">6.50 × 5.00 m</text>
+<text x="209.5" y="555.0" text-anchor="middle" class="room">Three-bay garage</text>
+<text x="209.5" y="574.0" text-anchor="middle" class="dim">9.00 × 10.00 m</text>
+<text x="209.5" y="587.0" text-anchor="middle" class="dim">NOT LIVING AREA</text>
+<text x="680.75" y="262.1" text-anchor="middle" class="room">Rear covered porch</text>
+<text x="680.75" y="281.1" text-anchor="middle" class="dim">14.50 × 2.20 m</text>
+<text x="680.75" y="294.1" text-anchor="middle" class="dim">NOT LIVING AREA</text>
+<text x="688.0" y="726.1" text-anchor="middle" class="room">Front porch</text>
+<text x="688.0" y="745.1" text-anchor="middle" class="dim">14.00 × 1.80 m</text>
+<text x="688.0" y="758.1" text-anchor="middle" class="dim">NOT LIVING AREA</text>
+<path d="M79,786.2 L340,786.2" stroke="#8a7a62"/>
+<path d="M75,782.2 l8,8" stroke="#8a7a62"/>
+<path d="M336,782.2 l8,8" stroke="#8a7a62"/>
+<text x="209.5" y="777.2" text-anchor="middle" class="small">9.00 m · garage wing</text>
+<path d="M340,786.2 L891,786.2" stroke="#8a7a62"/>
+<path d="M336,782.2 l8,8" stroke="#8a7a62"/>
+<path d="M887,782.2 l8,8" stroke="#8a7a62"/>
+<text x="615.5" y="777.2" text-anchor="middle" class="small">19.00 m · main house</text>
+<path d="M934.5,705 L934.5,299" stroke="#8a7a62"/>
+<path d="M930.5,701 l8,8" stroke="#8a7a62"/>
+<path d="M930.5,295 l8,8" stroke="#8a7a62"/>
+<text x="934.5" y="493.0" text-anchor="middle" class="small" transform="rotate(-90 934.5 493.0)">14.00 m</text>
+<path d="M79,200.40000000000003 L891,200.40000000000003" stroke="#8a7a62"/>
+<path d="M75,196.40000000000003 l8,8" stroke="#8a7a62"/>
+<path d="M887,196.40000000000003 l8,8" stroke="#8a7a62"/>
+<text x="485.0" y="191.40000000000003" text-anchor="middle" class="small">28.00 m overall · all dimensions inferred</text>
+<text x="58" y="842" class="small">AREA RECONCILIATION</text>
+<text x="58" y="865" class="small">Lower 275.00 m² + upper 140.00 m² = 415.00 m² (4,467 sq ft).</text>
+<text x="58" y="888" class="small">Garage 90.00 m² and porches 57.10 m² excluded. Upper voids and unmodeled roof zones excluded.</text>
+<text x="58" y="913" class="small">Area match is by construction, not proof of accuracy. Floor split, footprint, partitions and roof headroom need verification.</text>
+<text x="58" y="936" class="small">Stair: 18 × 0.18 m rise / 0.25 m going. Dashed rooms: unpictured or excluded. Gross areas include wall allowance.</text>
+</svg>

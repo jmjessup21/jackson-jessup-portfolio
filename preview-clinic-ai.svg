@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="t d">
+<title id="t">PT clinic enterprise AI — planned architecture</title><desc id="d">Concept: authorized clinic staff access local AI and approved operational sources inside a company-controlled environment. Reports pass through human review before export. Planned controls, not a deployed compliance certification.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="none" stroke="#76563d" stroke-width="1.4"/></marker></defs>
+<rect width="1200" height="750" fill="#f3eee5"/>
+<g font-family="Arial,sans-serif"><text x="55" y="64" fill="#76563d" font-size="17" letter-spacing="3">SYSTEM DESIGN / IN PROGRESS</text><text x="55" y="112" fill="#30271f" font-size="34">A company-controlled AI workspace.</text>
+<rect x="55" y="160" width="1090" height="428" rx="16" fill="#e8ded0" stroke="#b9aa96" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="85" y="199" fill="#685342" font-size="17" letter-spacing="2">PROPOSED INTERNAL BOUNDARY</text>
+<g stroke="#76563d" stroke-width="2" fill="none" marker-end="url(#arrow)"><path d="M321 356H430"/><path d="M700 356H807"/><path d="M941 434V480H564V445"/></g>
+<g fill="#fffaf3" stroke="#c9b49b" stroke-width="2"><rect x="85" y="270" width="236" height="164" rx="10"/><rect x="430" y="251" width="270" height="194" rx="10"/><rect x="809" y="270" width="306" height="164" rx="10"/></g>
+<g fill="#30271f" text-anchor="middle"><text x="203" y="319" font-size="23">Clinic staff</text><text x="565" y="303" font-size="26">Local AI</text><text x="962" y="319" font-size="23">Approved sources</text></g>
+<g fill="#6d5a47" text-anchor="middle" font-size="18"><text x="203" y="357">Company identity</text><text x="203" y="384">Role-based access</text><text x="565" y="346">Questions + evidence</text><text x="565" y="377">Operational workflows</text><text x="962" y="357">Clinic knowledge</text><text x="962" y="384">Authorized reporting data</text></g>
+<rect x="307" y="521" width="585" height="42" rx="21" fill="#d1bfaa"/><text x="600" y="548" text-anchor="middle" fill="#4f4033" font-size="17">Planned: access controls · audit trail · export review</text>
+<path d="M600 590V616" stroke="#76563d" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="600" y="650" text-anchor="middle" fill="#30271f" font-size="23">Human review before a report leaves the system</text>
+<text x="55" y="710" fill="#786856" font-size="17">CONCEPT PREVIEW · No patient data · HIPAA readiness remains a design goal</text></g></svg>
