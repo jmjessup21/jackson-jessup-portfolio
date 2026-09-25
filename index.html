@@ -16,9 +16,10 @@
   <meta property="og:image:alt" content="Jackson Jessup, Data and BI Analyst: messy operational data, clear decisions. 30+ dashboards shipped.">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="experience.css?v=1">
   <link rel="stylesheet" href="in-progress.css">
-  <script src="app.js" defer></script>
+  <script src="app.js?v=2" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -52,125 +53,268 @@
 </section>
 
 <section class="work-section wrap" id="work" aria-labelledby="work-title">
-  <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">The question, the work,<br><em>and what the data said.</em></h2></div><p>One professional role and five academic projects across sports, real estate, retail, healthcare, and operations. Each one leads with the finding. Open a project for the method and limits.</p></div>
+  <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">The question, the work,<br><em>and what the data said.</em></h2></div><p>Six stops, in order: the real job first, then sports, real estate, retail, applied AI, and systems. Each leads with the finding and the call I made. Explore the data where you see <span class="inline-chip">Explore</span>.</p></div>
 
-  <article class="project featured" id="rise-project">
-    <div class="featured-stat" aria-hidden="true"><strong>30+</strong><span>dashboards shipped</span></div>
-    <div class="project-copy">
-      <p class="project-meta">RISE PHYSICAL THERAPY · DATA ANALYST INTERN · APR 2025 – PRESENT</p>
-      <h3>Turning daily operations into reports leaders actually use.</h3>
-      <div class="finding"><strong>Manual → automated</strong><p>Clinic and team dashboards, year-over-year comparisons, and performance trackers that help the Director of Operations monitor scheduling, efficiency, and outcomes. Recurring Excel reports became repeatable, validated workflows.</p></div>
-      <dl class="brief">
-        <div><dt>Question</dt><dd>Which clinics and teams are on track, and where should leadership look next?</dd></div>
-        <div><dt>My role</dt><dd>I define the metrics, build the dashboards and comparisons, and automate manual Excel reporting.</dd></div>
-        <div><dt>Tools</dt><dd>Excel automation · Dashboards · Data validation · AI-assisted development</dd></div>
-      </dl>
-      <details><summary>How I work <span aria-hidden="true">↗</span></summary><div class="case-content">
-        <h4>Definitions before dashboards</h4><p>Every report starts with the metric and its denominator. That includes deciding when missing activity is different from zero activity, and reconciling sources before any comparison goes to leadership.</p>
-                <h4>Privacy built in</h4><p>I develop against synthetic data, exclude patient fields a report doesn’t need, and document where data can and cannot go before any AI tool touches a workflow.</p>
-        <h4>Ask me about</h4><p>Metric definitions, source reconciliation, year-over-year comparisons, and turning a manual report into an automated one.</p>
-      </div></details>
-    </div>
-  </article>
-
-  <div class="project-grid">
-    <article class="project" id="nfl-project">
-      <a class="evidence-image" href="assets/work/nfl-guarantees-by-team.png" target="_blank" rel="noopener" aria-label="Open full-size chart: average guaranteed contract amount by NFL signing team"><img src="assets/work/nfl-guarantees-by-team.png" alt="Tableau bar chart of average guaranteed contract amount by NFL signing team" loading="lazy"><span>View full size ↗</span></a>
-      <div class="project-copy">
-        <p class="project-meta">SPORTS ANALYTICS · TEAM OF 4</p>
-        <h3>NFL draft &amp; contract analytics.</h3>
-        <div class="finding"><strong>6 of the top 7</strong><p>positions for career length are linemen or tight ends (ANOVA, p &lt; .0001). Skill-position players should negotiate for guaranteed money, not long-term bonuses.</p></div>
-        <dl class="brief">
-          <div><dt>Question</dt><dd>Do draft round, position, and signing team predict career length and guaranteed pay?</dd></div>
-          <div><dt>My role</dt><dd>One of four analysts on a shared Tableau workbook and presentation, with recommendations for players, teams, and agents.</dd></div>
-          <div><dt>Tools</dt><dd>Tableau · One-way ANOVA · Correlation · 2011–2022 draft data</dd></div>
-        </dl>
-        <details><summary>More findings &amp; method <span aria-hidden="true">↗</span></summary><div class="case-content">
-          <div class="supporting-artifact"><a href="assets/work/nfl-games-by-round.png" target="_blank" rel="noopener" aria-label="Open full-size chart: games played by draft round"><img src="assets/work/nfl-games-by-round.png" alt="Tableau chart of average games played by draft round" loading="lazy"><span>View full size ↗</span></a></div>
-          <h4>Teams differ on guarantees</h4><p>Average guaranteed amounts differ significantly by signing team (p = .0455). The Rams, Chargers, Browns, Eagles, and Chiefs spend the most.</p>
-          <h4>Draft round matters, with exceptions</h4><p>First-round picks have longer careers on average (p &lt; .0001). Quarterbacks and linebackers are the exception: second-round picks lasted longest.</p>
-          <h4>Limits</h4><p>Older draft classes had more seasons to accumulate games, so these are descriptive differences, not causal effects.</p>
-        </div></details>
-      </div>
-    </article>
-
-    <article class="project" id="housing-project">
-      <a class="evidence-image" href="assets/work/arkansas-crime-home-prices.png" target="_blank" rel="noopener" aria-label="Open full-size chart: year-over-year crime change versus average sale price change by Arkansas county"><img src="assets/work/arkansas-crime-home-prices.png" alt="Scatterplot of year-over-year crime change versus average sale price change across Arkansas counties, in four quadrants" loading="lazy"><span>View full size ↗</span></a>
-      <div class="project-copy">
-        <p class="project-meta">REAL ESTATE ANALYTICS · TEAM WAREHOUSE + INDIVIDUAL ANALYSIS</p>
-        <h3>Crime, home values, and a county-level warehouse.</h3>
-        <div class="finding"><strong>+$8,000</strong><p>in average home value per reported crime reduced in Washington County (2020–2023). Benton, Saline, and Faulkner counties each topped +$1,000.</p></div>
-        <dl class="brief">
-          <div><dt>Question</dt><dd>Is crime reduction associated with rising home values across Arkansas counties?</dd></div>
-          <div><dt>My role</dt><dd>Built the individual crime-vs-price analysis; co-built the team’s SQL Server warehouse.</dd></div>
-          <div><dt>Tools</dt><dd>SQL Server · Python (Census API) · Power BI · Dimensional modeling</dd></div>
-        </dl>
-        <details><summary>The warehouse &amp; method <span aria-hidden="true">↗</span></summary><div class="case-content">
-          <div class="supporting-artifact"><a href="assets/work/arkansas-warehouse.jpeg" target="_blank" rel="noopener" aria-label="Open full-size image: the team’s dimensional data model"><img src="assets/work/arkansas-warehouse.jpeg" alt="Dimensional data model with four fact tables joined through shared county and date dimensions" loading="lazy"><span>View full size ↗</span></a></div>
-          <h4>The build</h4><p>Four fact tables (property, crime, population, economics) joined through shared county and date dimensions. Data came from the Census API through Python and from 15 CSV sources.</p>
-          <h4>The hard part</h4><p>The sources didn’t share a grain. We started at property level and moved to county level so the comparisons would be valid.</p>
-          <h4>Limits</h4><p>Crime reporting is incomplete in some counties, and this is an association, not proof that less crime raises prices.</p>
-        </div></details>
-      </div>
-    </article>
-
-    <article class="project" id="membership-project">
-      <a class="evidence-image" href="assets/work/hog-heaven-model-comparison.png" target="_blank" rel="noopener" aria-label="Open full-size table: model comparison of misclassification, false-positive and false-negative rates"><img src="assets/work/hog-heaven-model-comparison.png" alt="Model comparison table: gradient boosting 21.86% misclassification, sequential neural network 22.16%, ensemble decision tree 30.18%" loading="lazy"><span>View full size ↗</span></a>
-      <div class="project-copy">
-        <p class="project-meta">RETAIL PREDICTIVE ANALYTICS · TEAM OF 3</p>
-        <h3>Deciding who a $7 sales call should go to.</h3>
-        <div class="finding"><strong>54% → 22%</strong><p>misclassification: gradient boosting beat the baseline so that about 4 in 5 campaign calls would reach customers likely to buy a membership.</p></div>
-        <dl class="brief">
-          <div><dt>Question</dt><dd>Which customers should a paid-call membership campaign target?</dd></div>
-          <div><dt>My role</dt><dd>Built 3 of the team’s 9 advanced models and contributed to preprocessing and the final recommendation.</dd></div>
-          <div><dt>Tools</dt><dd>SAS Enterprise Miner · Gradient boosting · Neural networks · Decision trees</dd></div>
-        </dl>
-        <details><summary>Method &amp; drivers <span aria-hidden="true">↗</span></summary><div class="case-content">
-          <h4>What drove the prediction</h4><p>Recency of last purchase, interest in accessories, and email opens and clicks. Customers who engage recently are the ones who convert.</p>
-          <h4>Method</h4><p>We reframed a 0–5 interest survey score as a likely/unlikely target, handled missing values, standardized inputs, and removed redundant total/component variables.</p>
-          <h4>Limits</h4><p>The model predicts survey interest, not observed purchases. The next step would be measuring real conversion before rollout.</p>
-        </div></details>
-      </div>
-    </article>
-
-    <article class="project" id="medai-project">
-      <a class="evidence-image" href="assets/work/medai-service-line.png" target="_blank" rel="noopener" aria-label="Open full-size chart: average length of stay by service line"><img src="assets/work/medai-service-line.png" alt="Chart generated by the assistant: average length of stay by service line with encounter counts, on fictional course data" loading="lazy"><span>View full size ↗</span></a>
-      <div class="project-copy">
-        <p class="project-meta">APPLIED AI · GRADUATE TEAM PROJECT · 2026</p>
-        <h3>An AI assistant that answers data questions in plain English.</h3>
-        <div class="finding"><strong>322,574</strong><p>inpatient encounters made queryable in plain English, with shared metric definitions so every answer follows the same rules.</p></div>
-        <dl class="brief">
-          <div><dt>Question</dt><dd>Can a non-analyst ask questions of a large dataset and get correct, consistent answers?</dd></div>
-          <div><dt>My role</dt><dd>AI-assisted development of the Flask app, and testing of the visualization version.</dd></div>
-          <div><dt>Tools</dt><dd>Python · Flask · Claude API · Pivot tables · AI evaluation</dd></div>
-        </dl>
-        <details><summary>What we caught in testing <span aria-hidden="true">↗</span></summary><div class="case-content">
-          <div class="supporting-artifact"><a href="assets/work/medai-interface.png" target="_blank" rel="noopener" aria-label="Open full-size image: the assistant’s chat interface"><img src="assets/work/medai-interface.png" alt="The assistant’s chat interface" loading="lazy"><span>View full size ↗</span></a></div>
-          <h4>A useful correction</h4><p>The assistant was comparing observed length of stay with external benchmarks that measure something different. We wrote the distinction into its reference files, and documented questions the data can’t support, such as readmission rates.</p>
-          <h4>Why it matters</h4><p>An AI answer is only as good as the definitions and checks behind it. The course dataset is entirely fictional.</p>
-        </div></details>
-      </div>
-    </article>
-
-    <article class="project" id="systems-project">
-      <a class="evidence-image" href="assets/work/time-tracking-interface.png" target="_blank" rel="noopener" aria-label="Open full-size image: time-tracking interface prototype"><img src="assets/work/time-tracking-interface.png" alt="Time-tracking interface prototype with Clock In, Submit Time, Payroll, Add Time and Clock Out controls" loading="lazy"><span>View full size ↗</span></a>
-      <div class="project-copy">
-        <p class="project-meta">BUSINESS SYSTEMS · INDIVIDUAL PROJECT · 2024</p>
-        <h3>One system for a construction company’s time, cost, and projects.</h3>
-        <div class="finding"><strong>6 roles</strong><p>mapped to exactly what each can view or change, with exception paths for overtime, incomplete invoices, and unavailable crews.</p></div>
-        <dl class="brief">
-          <div><dt>Question</dt><dd>How can a growing contractor replace scattered time sheets, costs, and messages with one system?</dd></div>
-          <div><dt>My role</dt><dd>Sole author, from charter and cost-benefit analysis through the UI prototype.</dd></div>
-          <div><dt>Tools</dt><dd>Requirements · Use cases · CRUD matrix · Activity diagrams · UI prototyping</dd></div>
-        </dl>
-        <details><summary>The workflow <span aria-hidden="true">↗</span></summary><div class="case-content">
-          <div class="supporting-artifact"><a href="assets/work/time-tracking-calendar.png" target="_blank" rel="noopener" aria-label="Open full-size image: day-selection screen"><img src="assets/work/time-tracking-calendar.png" alt="Annotated day-selection screen from the time-tracking prototype" loading="lazy"><span>View full size ↗</span></a></div>
-          <h4>Scope</h4><p>Project managers, employees, vendors, customers, HR, and finance, covering time entry, supervisor approval, cost assignment, invoicing, and payroll integration.</p>
-          <h4>Targets set</h4><p>Cut information-retrieval time by 90% and labor-cost errors by 50%. These were design goals for the proposal, not measured results.</p>
-        </div></details>
-      </div>
-    </article>
+  <div class="filters" role="group" aria-label="Filter work by industry or skill">
+    <button type="button" class="active" data-filter="all" aria-pressed="true">All work</button>
+    <span class="filter-label" aria-hidden="true">Industry</span>
+    <button type="button" data-filter="sports" aria-pressed="false">Sports</button>
+    <button type="button" data-filter="real-estate" aria-pressed="false">Real estate</button>
+    <button type="button" data-filter="retail" aria-pressed="false">Retail</button>
+    <button type="button" data-filter="ai" aria-pressed="false">Applied AI</button>
+    <button type="button" data-filter="healthcare" aria-pressed="false">Healthcare ops</button>
+    <span class="filter-label" aria-hidden="true">Skill</span>
+    <button type="button" data-filter="sql" aria-pressed="false">SQL</button>
+    <button type="button" data-filter="python" aria-pressed="false">Python</button>
+    <button type="button" data-filter="dashboards" aria-pressed="false">Dashboards &amp; BI</button>
+    <button type="button" data-filter="excel" aria-pressed="false">Excel &amp; automation</button>
+    <button type="button" data-filter="modeling" aria-pressed="false">Stats &amp; modeling</button>
+    <button type="button" data-filter="systems" aria-pressed="false">Systems design</button>
   </div>
+  <p class="filter-status" id="filter-status" aria-live="polite">Showing all 6.</p>
+
+  <ol class="work-path">
+  <!-- 01 · Rise: the hero -->
+  <li class="project featured chapter" id="rise-project" data-tags="healthcare dashboards excel">
+    <span class="chapter-node" aria-hidden="true">01</span>
+    <div class="featured-top">
+      <div class="featured-stat"><strong data-count="30" data-suffix="+">30+</strong><span>dashboards shipped</span></div>
+      <div class="project-copy">
+        <p class="project-meta">01 · THE JOB · RISE PHYSICAL THERAPY · DATA ANALYST INTERN · APR 2025 – PRESENT</p>
+        <h3>Turning daily operations into reports leaders actually use.</h3>
+        <div class="finding"><strong>Manual → automated</strong><p>Clinic and team dashboards, year-over-year comparisons, and performance trackers that help the Director of Operations monitor scheduling, efficiency, and outcomes. Recurring Excel reports became repeatable, validated workflows.</p></div>
+        <dl class="brief">
+          <div><dt>Question</dt><dd>Which clinics and teams are on track, and where should leadership look next?</dd></div>
+          <div><dt>My role</dt><dd>I define the metrics, build the dashboards and comparisons, and automate manual Excel reporting.</dd></div>
+          <div><dt>Key decision</dt><dd>Separate <em>missing</em> activity from <em>zero</em> activity before any comparison reaches leadership.</dd></div>
+        </dl>
+        <p class="tools">Excel automation · Dashboards · Data validation · AI-assisted development</p>
+      </div>
+    </div>
+
+    <div class="process-strip" aria-label="How every report gets built">
+      <p class="strip-label">HOW EVERY REPORT GETS BUILT</p>
+      <ol>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18M3 17V7h18v10M7 7v4M11 7v6M15 7v4M19 7v6"/></svg><strong>Define</strong><span>Metric, denominator, and what counts as missing vs. zero.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><strong>Protect</strong><span>Synthetic data in development; only the fields a report needs.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg><strong>Automate</strong><span>Replace copy-paste steps with a repeatable workflow.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6"/></svg><strong>Validate</strong><span>Reconcile against the source before anything is shared.</span></li>
+      </ol>
+    </div>
+
+    <div class="before-after">
+      <div class="segmented" role="group" aria-label="Compare reporting before and after automation">
+        <button type="button" class="active" aria-pressed="true" data-ba="before">Before</button>
+        <button type="button" aria-pressed="false" data-ba="after">After</button>
+      </div>
+      <div class="ba-panel" data-panel="before">
+        <p class="ba-title">A manual report cycle</p>
+        <ol><li>Export raw data by hand</li><li>Copy, paste, and reformat in Excel</li><li>Rebuild comparisons every cycle</li><li>Check totals by eye</li></ol>
+      </div>
+      <div class="ba-panel" data-panel="after" hidden>
+        <p class="ba-title">A repeatable workflow</p>
+        <ol><li>Refresh from a consistent source</li><li>Metric definitions applied the same way every time</li><li>Year-over-year and clinic comparisons built in</li><li>Validation and reconciliation checks before sharing</li></ol>
+      </div>
+      <p class="fine">Illustrative workflow. No clinic data is shown.</p>
+    </div>
+
+    <p class="still-use"><span>What I still use</span> Define the denominator before you build the chart.</p>
+    <a class="ask-me" href="mailto:jmjessup21@gmail.com?subject=Question%20about%20your%20reporting%20work">Ask me how I turn a manual report into an automated one <span aria-hidden="true">↗</span></a>
+  </li>
+
+  <!-- 02 · NFL -->
+  <li class="project chapter" id="nfl-project" data-tags="sports dashboards modeling">
+    <span class="chapter-node" aria-hidden="true">02</span>
+    <div class="chapter-media">
+      <a class="evidence-image" href="assets/work/nfl-guarantees-by-team.png" target="_blank" rel="noopener" aria-label="Open full-size chart: average guaranteed contract amount by NFL signing team"><img src="assets/work/nfl-guarantees-by-team.png" alt="Tableau bar chart of average guaranteed contract amount by NFL signing team" loading="lazy"><span>View full size ↗</span></a>
+      <button type="button" class="explore-toggle" aria-expanded="false" aria-controls="nfl-explore">Explore the data <span aria-hidden="true">＋</span></button>
+      <div class="explorer" id="nfl-explore" hidden>
+        <p class="explorer-title">Average guaranteed money by signing team</p>
+        <div class="bar-explorer" data-chart="nfl" role="img" aria-label="Interactive bar chart: Rams highest at about 5.2 million dollars, Steelers and Colts lowest at about 2.6 million."></div>
+        <p class="explorer-readout" aria-live="polite">Hover or tap a bar. The <b>top 5</b> teams are highlighted.</p>
+        <p class="fine">Values (≈) read from the original Tableau chart. One-way ANOVA across teams: p = .0455.</p>
+      </div>
+    </div>
+    <div class="project-copy">
+      <p class="project-meta">02 · SPORTS ANALYTICS · TEAM OF 4</p>
+      <h3>NFL draft &amp; contract analytics.</h3>
+      <div class="finding"><strong>6 of the top 7</strong><p>positions for career length are linemen or tight ends (ANOVA, p &lt; .0001). Skill-position players should negotiate for guaranteed money, not long-term bonuses.</p></div>
+      <dl class="brief">
+        <div><dt>Question</dt><dd>Do draft round, position, and signing team predict career length and guaranteed pay?</dd></div>
+        <div><dt>My role</dt><dd>One of four analysts on a shared Tableau workbook and presentation, with recommendations for players, teams, and agents.</dd></div>
+        <div><dt>Key decision</dt><dd>Present results as descriptive: older draft classes had more seasons to rack up games.</dd></div>
+      </dl>
+      <p class="tools">Tableau · One-way ANOVA · Correlation · 2011–2022 draft data</p>
+      <p class="still-use"><span>What I still use</span> Say what a test can and can’t prove before presenting it.</p>
+      <details><summary>More findings &amp; method <span aria-hidden="true">↗</span></summary><div class="case-content">
+        <div class="supporting-artifact"><a href="assets/work/nfl-games-by-round.png" target="_blank" rel="noopener" aria-label="Open full-size chart: games played by draft round"><img src="assets/work/nfl-games-by-round.png" alt="Tableau chart of average games played by draft round" loading="lazy"><span>View full size ↗</span></a></div>
+        <h4>Teams differ on guarantees</h4><p>Average guaranteed amounts differ significantly by signing team (p = .0455). The Rams, Chargers, Browns, Eagles, and Chiefs spend the most.</p>
+        <h4>Draft round matters, with exceptions</h4><p>First-round picks have longer careers on average (p &lt; .0001). Quarterbacks and linebackers are the exception: second-round picks lasted longest.</p>
+      </div></details>
+      <a class="ask-me" href="mailto:jmjessup21@gmail.com?subject=Question%20about%20your%20NFL%20analysis">Ask me about survivorship bias in career-length data <span aria-hidden="true">↗</span></a>
+    </div>
+  </li>
+
+  <!-- 03 · Housing -->
+  <li class="project chapter" id="housing-project" data-tags="real-estate sql python dashboards">
+    <span class="chapter-node" aria-hidden="true">03</span>
+    <div class="chapter-media">
+      <a class="evidence-image" href="assets/work/arkansas-crime-home-prices.png" target="_blank" rel="noopener" aria-label="Open full-size chart: year-over-year crime change versus average sale price change by Arkansas county"><img src="assets/work/arkansas-crime-home-prices.png" alt="Scatterplot of year-over-year crime change versus average sale price change across Arkansas counties, in four quadrants" loading="lazy"><span>View full size ↗</span></a>
+      <button type="button" class="explore-toggle" aria-expanded="false" aria-controls="housing-explore">Explore the data <span aria-hidden="true">＋</span></button>
+      <div class="explorer" id="housing-explore" hidden>
+        <p class="explorer-title">Tap a county to read the story behind its dot</p>
+        <div class="hotspot-chart">
+          <img src="assets/work/arkansas-crime-home-prices.png" alt="Crime change versus sale price change by Arkansas county" loading="lazy">
+          <button type="button" class="hotspot" style="left:44.3%;top:6.8%" data-note="<b>Benton</b> · Crime down, prices up the most. One of Arkansas’s most populous counties, where you’d usually expect crime to rise.">1</button>
+          <button type="button" class="hotspot" style="left:53.3%;top:22.8%" data-note="<b>Washington</b> · Crime down, prices up. Leads Northwest and Central Arkansas at about +$8,000 of home value per reported crime reduced.">2</button>
+          <button type="button" class="hotspot" style="left:48.4%;top:42.2%" data-note="<b>Madison</b> · Same safer-and-pricier pattern at a lower price point, which is useful for buyers comparing safety against Benton.">3</button>
+          <button type="button" class="hotspot" style="left:42.2%;top:51.8%" data-note="<b>Saline &amp; Faulkner</b> · Central Arkansas shows the same pattern, so it isn’t only a Northwest story. Both topped +$1,000 per crime reduced.">4</button>
+          <button type="button" class="hotspot warn" style="left:61%;top:37.7%" data-note="<b>Garland</b> · Crime up, prices still up. Lakes and retirement appeal hold values, but a shrinking population makes it one to watch.">5</button>
+          <button type="button" class="hotspot warn" style="left:94.3%;top:54.1%" data-note="<b>Craighead</b> · Second-largest crime increase and modest price growth, despite a growing college-town population.">6</button>
+        </div>
+        <p class="explorer-readout" aria-live="polite">Top-left is <b>crime down, price up</b>. Tap a numbered dot.</p>
+        <p class="fine">County notes are from my individual analysis. This shows an association, not a cause.</p>
+      </div>
+    </div>
+    <div class="project-copy">
+      <p class="project-meta">03 · REAL ESTATE ANALYTICS · TEAM WAREHOUSE + INDIVIDUAL ANALYSIS</p>
+      <h3>Crime, home values, and a county-level warehouse.</h3>
+      <div class="finding"><strong data-count="8000" data-prefix="+$">+$8,000</strong><p>in average home value per reported crime reduced in Washington County (2020–2023). Benton, Saline, and Faulkner counties each topped +$1,000.</p></div>
+      <dl class="brief">
+        <div><dt>Question</dt><dd>Is crime reduction associated with rising home values across Arkansas counties?</dd></div>
+        <div><dt>My role</dt><dd>Built the individual crime-vs-price analysis; co-built the team’s SQL Server warehouse.</dd></div>
+        <div><dt>Key decision</dt><dd>Moved from property level to county level so every source shared one grain.</dd></div>
+      </dl>
+      <p class="tools">SQL Server · Python (Census API) · Power BI · Dimensional modeling</p>
+      <div class="pipeline" aria-label="From messy sources to a clean model">
+        <span><b>Messy sources</b>Census API · 15 CSVs</span>
+        <span><b>Load</b>Python</span>
+        <span><b>Model</b>4 fact tables · county &amp; date dims</span>
+        <span><b>Answer</b>Power BI</span>
+      </div>
+      <p class="still-use"><span>What I still use</span> Choose the grain before you join the sources.</p>
+      <details><summary>The data model &amp; limits <span aria-hidden="true">↗</span></summary><div class="case-content">
+        <div class="supporting-artifact"><a href="assets/work/arkansas-warehouse.jpeg" target="_blank" rel="noopener" aria-label="Open full-size image: the team’s dimensional data model"><img src="assets/work/arkansas-warehouse.jpeg" alt="Dimensional data model with four fact tables joined through shared county and date dimensions" loading="lazy"><span>View full size ↗</span></a></div>
+        <h4>Limits</h4><p>Crime reporting is incomplete in some counties, and this is an association, not proof that less crime raises prices.</p>
+      </div></details>
+      <a class="ask-me" href="mailto:jmjessup21@gmail.com?subject=Question%20about%20your%20housing%20warehouse">Ask me about reconciling sources with different grains <span aria-hidden="true">↗</span></a>
+    </div>
+  </li>
+
+  <!-- 04 · Hog Heaven -->
+  <li class="project chapter" id="membership-project" data-tags="retail modeling">
+    <span class="chapter-node" aria-hidden="true">04</span>
+    <div class="chapter-media">
+      <div class="model-explorer">
+        <p class="explorer-title">Model error rates <span>· interactive</span></p>
+        <div class="segmented small" role="group" aria-label="Choose an error metric">
+          <button type="button" class="active" aria-pressed="true" data-metric="0">Misclassification</button>
+          <button type="button" aria-pressed="false" data-metric="1">False positives</button>
+          <button type="button" aria-pressed="false" data-metric="2">False negatives</button>
+        </div>
+        <div class="model-bars" data-chart="models"></div>
+        <p class="explorer-readout" aria-live="polite">The baseline calls <b>everyone</b>, so it never misses a buyer but wastes a $7 call on every non-buyer.</p>
+        <p class="fine">Team results from the final report. Lower is better.</p>
+      </div>
+    </div>
+    <div class="project-copy">
+      <p class="project-meta">04 · RETAIL PREDICTIVE ANALYTICS · TEAM OF 3</p>
+      <h3>Deciding who a $7 sales call should go to.</h3>
+      <div class="finding"><strong>54% → 22%</strong><p>misclassification: gradient boosting beat the baseline so that about 4 in 5 campaign calls would reach customers likely to buy a membership.</p></div>
+      <dl class="brief">
+        <div><dt>Question</dt><dd>Which customers should a paid-call membership campaign target?</dd></div>
+        <div><dt>My role</dt><dd>Built 3 of the team’s 9 advanced models and contributed to preprocessing and the final recommendation.</dd></div>
+        <div><dt>Key decision</dt><dd>Turned a 0–5 interest score into likely/unlikely to match the real choice: call or don’t call.</dd></div>
+      </dl>
+      <p class="tools">SAS Enterprise Miner · Gradient boosting · Neural networks · Decision trees</p>
+      <p class="still-use"><span>What I still use</span> Judge a model by what its mistakes cost, not just its accuracy.</p>
+      <details><summary>Drivers, method &amp; limits <span aria-hidden="true">↗</span></summary><div class="case-content">
+        <div class="supporting-artifact"><a href="assets/work/hog-heaven-model-comparison.png" target="_blank" rel="noopener" aria-label="Open full-size table: original model comparison slide"><img src="assets/work/hog-heaven-model-comparison.png" alt="Original model comparison slide with misclassification, false-positive, and false-negative rates" loading="lazy"><span>View full size ↗</span></a></div>
+        <h4>What drove the prediction</h4><p>Recency of last purchase, interest in accessories, and email opens and clicks. Customers who engage recently are the ones who convert.</p>
+        <h4>Limits</h4><p>The model predicts survey interest, not observed purchases. The next step would be measuring real conversion before rollout.</p>
+      </div></details>
+      <a class="ask-me" href="mailto:jmjessup21@gmail.com?subject=Question%20about%20your%20membership%20model">Ask me about trading false positives for false negatives <span aria-hidden="true">↗</span></a>
+    </div>
+  </li>
+
+  <!-- 05 · MedAI -->
+  <li class="project chapter" id="medai-project" data-tags="ai healthcare python">
+    <span class="chapter-node" aria-hidden="true">05</span>
+    <div class="chapter-media">
+      <div class="chat-replay" aria-label="Replay of a real test question to the assistant">
+        <div class="chat-head"><span class="status-dot"></span> Test log replay · fictional course data <button type="button" class="replay-button">Replay ↻</button></div>
+        <div class="chat-body" aria-live="polite">
+          <div class="msg user" data-step="0">What is the average length of stay by facility?</div>
+          <div class="msg bot" data-step="1">Here’s the average length of stay <b>(Observed ALOS)</b> by facility: 12 facilities, 49,000 discharges.
+            <table><thead><tr><th>Facility</th><th>Discharges</th><th>Avg LOS</th></tr></thead><tbody>
+            <tr><td>River Valley Health System Hospitals</td><td>10,184</td><td>6.13</td></tr>
+            <tr><td>Valley Health Network – Bush Renner</td><td>4,002</td><td>6.12</td></tr>
+            <tr><td>Valley Health Network – South DFW</td><td>4,117</td><td>5.22</td></tr>
+            <tr class="gap"><td colspan="3">…</td></tr>
+            <tr class="flag"><td>River Valley – North DFW</td><td>112</td><td>2.62*</td></tr>
+            </tbody></table>
+            <small>*Small facility (112 discharges), so its average is less stable.</small></div>
+          <div class="msg bot" data-step="2">This is observed ALOS, <b>not a CMS benchmark</b>. Want the benchmark comparison instead?</div>
+          <div class="msg check" data-step="3">✓ Checked: recomputed independently with pandas. The top two values matched exactly.</div>
+        </div>
+      </div>
+    </div>
+    <div class="project-copy">
+      <p class="project-meta">05 · APPLIED AI · GRADUATE TEAM PROJECT · 2026</p>
+      <h3>An AI assistant that answers data questions in plain English.</h3>
+      <div class="finding"><strong data-count="322574">322,574</strong><p>inpatient encounters made queryable in plain English, with shared metric definitions so every answer follows the same rules.</p></div>
+      <dl class="brief">
+        <div><dt>Question</dt><dd>Can a non-analyst ask questions of a large dataset and get correct, consistent answers?</dd></div>
+        <div><dt>My role</dt><dd>AI-assisted development of the Flask app, and testing of the visualization version.</dd></div>
+        <div><dt>Key decision</dt><dd>Wrote metric definitions into the assistant so it labels observed stay separately from external benchmarks.</dd></div>
+      </dl>
+      <p class="tools">Python · Flask · Claude API · Pivot tables · AI evaluation</p>
+      <p class="still-use"><span>What I still use</span> An AI answer is only as trustworthy as the definitions and checks behind it.</p>
+      <details><summary>The interface &amp; what we caught <span aria-hidden="true">↗</span></summary><div class="case-content">
+        <div class="supporting-artifact"><a href="assets/work/medai-interface.png" target="_blank" rel="noopener" aria-label="Open full-size image: the assistant’s chat interface"><img src="assets/work/medai-interface.png" alt="The assistant’s chat interface" loading="lazy"><span>View full size ↗</span></a></div>
+        <h4>A useful correction</h4><p>Early on, the assistant compared observed length of stay with benchmarks that measure something different. We wrote the distinction into its reference files and documented questions the data can’t support, such as readmission rates. The replay above shows the fix working on an unprompted question.</p>
+      </div></details>
+      <a class="ask-me" href="mailto:jmjessup21@gmail.com?subject=Question%20about%20your%20AI%20analytics%20assistant">Ask me how we tested an AI’s answers against the raw data <span aria-hidden="true">↗</span></a>
+    </div>
+  </li>
+
+  <!-- 06 · Systems -->
+  <li class="project chapter" id="systems-project" data-tags="systems">
+    <span class="chapter-node" aria-hidden="true">06</span>
+    <div class="chapter-media">
+      <a class="evidence-image" href="assets/work/time-tracking-interface.png" target="_blank" rel="noopener" aria-label="Open full-size image: time-tracking interface prototype"><img src="assets/work/time-tracking-interface.png" alt="Time-tracking interface prototype with Clock In, Submit Time, Payroll, Add Time and Clock Out controls" loading="lazy"><span>View full size ↗</span></a>
+      <div class="flow" aria-label="Time-entry workflow with exception paths">
+        <p class="explorer-title">The time-entry workflow</p>
+        <ol>
+          <li>Clock in</li>
+          <li>Submit time<span class="exception">Under 0.25 h or outside the pay period → not accepted</span></li>
+          <li>Supervisor review<span class="exception">Over designated hours → exception for review</span></li>
+          <li>Payroll &amp; HR</li>
+        </ol>
+      </div>
+    </div>
+    <div class="project-copy">
+      <p class="project-meta">06 · BUSINESS SYSTEMS · INDIVIDUAL PROJECT · 2024</p>
+      <h3>One system for a construction company’s time, cost, and projects.</h3>
+      <div class="finding"><strong>6 roles</strong><p>mapped to exactly what each can view or change, with exception paths for overtime, incomplete invoices, and unavailable crews.</p></div>
+      <dl class="brief">
+        <div><dt>Question</dt><dd>How can a growing contractor replace scattered time sheets, costs, and messages with one system?</dd></div>
+        <div><dt>My role</dt><dd>Sole author, from charter and cost-benefit analysis through the UI prototype.</dd></div>
+        <div><dt>Key decision</dt><dd>Designed the exception paths alongside the happy path, not after it.</dd></div>
+      </dl>
+      <p class="tools">Requirements · Use cases · CRUD matrix · Activity diagrams · UI prototyping</p>
+      <p class="still-use"><span>What I still use</span> A workflow isn’t done until its exceptions are.</p>
+      <details><summary>Scope &amp; targets <span aria-hidden="true">↗</span></summary><div class="case-content">
+        <div class="supporting-artifact"><a href="assets/work/time-tracking-calendar.png" target="_blank" rel="noopener" aria-label="Open full-size image: day-selection screen"><img src="assets/work/time-tracking-calendar.png" alt="Annotated day-selection screen from the time-tracking prototype" loading="lazy"><span>View full size ↗</span></a></div>
+        <h4>Scope</h4><p>Project managers, employees, vendors, customers, HR, and finance, covering time entry, supervisor approval, cost assignment, invoicing, and payroll integration.</p>
+        <h4>Targets set</h4><p>Cut information-retrieval time by 90% and labor-cost errors by 50%. These were design goals for the proposal, not measured results.</p>
+      </div></details>
+      <a class="ask-me" href="mailto:jmjessup21@gmail.com?subject=Question%20about%20your%20systems%20design%20project">Ask me about designing role-based permissions <span aria-hidden="true">↗</span></a>
+    </div>
+  </li>
+  </ol>
+
+  <a class="bridge" href="#in-progress"><span>These are the questions I’ve already answered.</span> <em>Here’s what I’m asking next.</em> <span aria-hidden="true">↓</span></a>
 </section>
 
 <section class="in-progress-section wrap" id="in-progress" aria-labelledby="in-progress-title">

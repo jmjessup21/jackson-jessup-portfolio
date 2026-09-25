@@ -8,7 +8,7 @@ Personal portfolio, mobile quick links, and digital business card.
 - `links.html`: quick links
 - `card.html`: digital business card with QR and contact download
 
-Plain HTML, CSS, and JavaScript; no build step. Publish the `main` branch root through GitHub Pages. `.nojekyll` preserves the static files.
+Plain HTML, CSS, and JavaScript; no build step. `experience.css` + `app.js` power the Work section (filters, explorers, chat replay, count-ups). Publish the `main` branch root through GitHub Pages. `.nojekyll` preserves the static files.
 
 Generated assets: `assets/Jackson-Jessup-Resume.pdf` (one-page resume) is built from the private resume data by `scripts/build_resume.py`; `assets/og-image.jpg` (social link preview) by `scripts/make_og_image.py`. Don't edit them by hand.
 
