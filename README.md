@@ -10,6 +10,8 @@ Personal portfolio, mobile quick links, and digital business card.
 
 Plain HTML, CSS, and JavaScript; no build step. `experience.css` + `app.js` power the Work section (filters, explorers, chat replay, count-ups). Publish the `main` branch root through GitHub Pages. `.nojekyll` preserves the static files.
 
+The September 29 review added combined Industry + Skill filters with shareable URL state, an empty state, Previous/Next navigation in the evidence viewer, improved phone controls and accessible labels, and a smaller WebP basketball preview. The original PNG remains available through **Open original**. The housing explorer's two close county markers remain a narrow-phone usability limitation.
+
 Generated assets: `assets/Jackson-Jessup-Resume.pdf` (one-page resume) is built from the private resume data by `scripts/build_resume.py`; `assets/og-image.jpg` (social link preview) by `scripts/make_og_image.py`. Don't edit them by hand.
 
 The current portrait is based on Jackson’s supplied photo with an AI-edited warm background. Academic team contributions are attributed in the portfolio. MedAI uses fictional course data; Rise is a text-only professional overview.

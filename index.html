@@ -16,17 +16,17 @@
   <meta property="og:image:alt" content="Jackson Jessup, Data and BI Analyst: messy operational data, clear decisions. 30+ dashboards shipped.">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=7">
-  <link rel="stylesheet" href="experience.css?v=1">
-  <link rel="stylesheet" href="in-progress.css">
-  <script src="app.js?v=2" defer></script>
+  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="experience.css?v=4">
+  <link rel="stylesheet" href="in-progress.css?v=2">
+  <script src="app.js?v=5" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="header">
-  <a class="brand" href="#home" aria-label="Jackson Jessup home"><span class="monogram">jj<span>.</span></span><span>JACKSON JESSUP</span></a>
+  <a class="brand" href="#home"><span class="monogram" aria-hidden="true">jj<span>.</span></span><span>JACKSON JESSUP</span></a>
   <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">+</span></button>
-  <nav id="navigation" aria-label="Main navigation"><a href="#work">Work</a><a href="#in-progress">In progress</a><a href="#about">About</a><a href="#experience">Experience</a><a href="https://github.com/jmjessup21" target="_blank" rel="noopener noreferrer">GitHub</a><a href="#contact" class="nav-contact">Let’s connect <span aria-hidden="true">↗</span></a></nav>
+  <nav id="navigation" aria-label="Main navigation"><a href="#work">Work</a><a href="#in-progress">In progress</a><a href="#about">About</a><a href="#experience">Experience</a><a href="https://github.com/jmjessup21" target="_blank" rel="noopener noreferrer">GitHub</a><a href="#contact" class="nav-contact">Let’s connect <span aria-hidden="true">↓</span></a></nav>
 </header>
 <main id="main">
 <section class="hero wrap" id="home" aria-labelledby="hero-title">
@@ -38,11 +38,11 @@
       <p class="intro">I turn messy operational data into clear, data-driven decisions through dashboards. I’ve shipped <strong>30+ dashboards</strong> as a Data Analyst Intern while finishing a master’s in Information Systems.</p>
       <p class="open-to"><span class="status-dot"></span> Open to full-time data &amp; BI analyst roles · Nashville or remote · June 2027</p>
       <div class="actions"><a class="button primary" href="#work">See the work <span aria-hidden="true">↓</span></a><a class="button secondary" href="assets/Jackson-Jessup-Resume.pdf" target="_blank" rel="noopener">View resume <span aria-hidden="true">↗</span></a></div>
-      <div class="hero-social"><a href="https://www.linkedin.com/in/jackson-jessup-32b0a821b/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><span aria-hidden="true">/</span><a href="https://github.com/jmjessup21" target="_blank" rel="noopener noreferrer">GitHub ↗</a><span aria-hidden="true">/</span><a href="mailto:jmjessup21@gmail.com">Email ↗</a></div>
+      <div class="hero-social"><a href="https://www.linkedin.com/in/jackson-jessup-32b0a821b/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><span aria-hidden="true">/</span><a href="https://github.com/jmjessup21" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><span aria-hidden="true">/</span><a href="mailto:jmjessup21@gmail.com">Email <span aria-hidden="true">↗</span></a></div>
     </div>
     <figure class="portrait">
       <div class="portrait-frame"><img src="assets/jackson-jessup-portrait.webp" srcset="assets/jackson-jessup-portrait-900.webp 900w, assets/jackson-jessup-portrait.webp 1229w" sizes="(max-width: 760px) 90vw, 460px" width="1229" height="1280" alt="Portrait of Jackson Jessup" fetchpriority="high"></div>
-      <div class="portrait-location"><span class="status-dot"></span> FAYETTEVILLE, AR · NASHVILLE-BOUND</div>
+      <div class="portrait-location"><span class="status-dot"></span> <span>FAYETTEVILLE, AR · <span class="nowrap">NASHVILLE-BOUND</span></span></div>
     </figure>
   </div>
   <div class="credentials">
@@ -56,22 +56,32 @@
   <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">The question, the work,<br><em>and what the data said.</em></h2></div><p>Six stops, in order: the real job first, then sports, real estate, retail, applied AI, and systems. Each leads with the finding and the call I made. Explore the data where you see <span class="inline-chip">Explore</span>.</p></div>
 
   <div class="filters" role="group" aria-label="Filter work by industry or skill">
-    <button type="button" class="active" data-filter="all" aria-pressed="true">All work</button>
-    <span class="filter-label" aria-hidden="true">Industry</span>
-    <button type="button" data-filter="sports" aria-pressed="false">Sports</button>
-    <button type="button" data-filter="real-estate" aria-pressed="false">Real estate</button>
-    <button type="button" data-filter="retail" aria-pressed="false">Retail</button>
-    <button type="button" data-filter="ai" aria-pressed="false">Applied AI</button>
-    <button type="button" data-filter="healthcare" aria-pressed="false">Healthcare ops</button>
-    <span class="filter-label" aria-hidden="true">Skill</span>
-    <button type="button" data-filter="sql" aria-pressed="false">SQL</button>
-    <button type="button" data-filter="python" aria-pressed="false">Python</button>
-    <button type="button" data-filter="dashboards" aria-pressed="false">Dashboards &amp; BI</button>
-    <button type="button" data-filter="excel" aria-pressed="false">Excel &amp; automation</button>
-    <button type="button" data-filter="modeling" aria-pressed="false">Stats &amp; modeling</button>
-    <button type="button" data-filter="systems" aria-pressed="false">Systems design</button>
+    <button type="button" class="active filter-all" data-filter="all" aria-pressed="true">All work</button>
+    <div class="filter-group" role="group" aria-label="Industry filters">
+      <span class="filter-label" aria-hidden="true">Industry</span>
+      <div class="filter-rail">
+        <button type="button" data-filter="sports" aria-pressed="false">Sports</button>
+        <button type="button" data-filter="real-estate" aria-pressed="false">Real estate</button>
+        <button type="button" data-filter="retail" aria-pressed="false">Retail</button>
+        <button type="button" data-filter="ai" aria-pressed="false">Applied AI</button>
+        <button type="button" data-filter="healthcare" aria-pressed="false">Healthcare ops</button>
+      </div>
+    </div>
+    <div class="filter-group" role="group" aria-label="Skill filters">
+      <span class="filter-label" aria-hidden="true">Skill</span>
+      <div class="filter-rail">
+        <button type="button" data-filter="sql" aria-pressed="false">SQL</button>
+        <button type="button" data-filter="python" aria-pressed="false">Python</button>
+        <button type="button" data-filter="dashboards" aria-pressed="false">Dashboards &amp; BI</button>
+        <button type="button" data-filter="excel" aria-pressed="false">Excel &amp; automation</button>
+        <button type="button" data-filter="modeling" aria-pressed="false">Stats &amp; modeling</button>
+        <button type="button" data-filter="systems" aria-pressed="false">Systems design</button>
+      </div>
+    </div>
   </div>
   <p class="filter-status" id="filter-status" aria-live="polite">Showing all 6.</p>
+  <div class="filter-empty" id="filter-empty" hidden><p>No work matches both filters.</p><button type="button" class="filter-reset">Show all work</button></div>
+  <nav class="work-index" id="work-index" aria-label="Work at a glance" hidden><ol></ol></nav>
 
   <ol class="work-path">
   <!-- 01 · Rise: the hero -->
@@ -92,7 +102,7 @@
       </div>
     </div>
 
-    <div class="process-strip" aria-label="How every report gets built">
+    <div class="process-strip" role="group" aria-label="How every report gets built">
       <p class="strip-label">HOW EVERY REPORT GETS BUILT</p>
       <ol>
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18M3 17V7h18v10M7 7v4M11 7v6M15 7v4M19 7v6"/></svg><strong>Define</strong><span>Metric, denominator, and what counts as missing vs. zero.</span></li>
@@ -126,12 +136,13 @@
   <li class="project chapter" id="nfl-project" data-tags="sports dashboards modeling">
     <span class="chapter-node" aria-hidden="true">02</span>
     <div class="chapter-media">
-      <a class="evidence-image" href="assets/work/nfl-guarantees-by-team.png" target="_blank" rel="noopener" aria-label="Open full-size chart: average guaranteed contract amount by NFL signing team"><img src="assets/work/nfl-guarantees-by-team.png" alt="Tableau bar chart of average guaranteed contract amount by NFL signing team" loading="lazy"><span>View full size ↗</span></a>
+      <a class="evidence-image" href="assets/work/nfl-guarantees-by-team.png" target="_blank" rel="noopener" aria-label="View full size: average guaranteed contract amount by NFL signing team"><img src="assets/work/nfl-guarantees-by-team.png" alt="Tableau bar chart of average guaranteed contract amount by NFL signing team" loading="lazy"><span>View full size <span class="glyph-expand" aria-hidden="true"></span></span></a>
       <button type="button" class="explore-toggle" aria-expanded="false" aria-controls="nfl-explore">Explore the data <span aria-hidden="true">＋</span></button>
       <div class="explorer" id="nfl-explore" hidden>
         <p class="explorer-title">Average guaranteed money by signing team</p>
-        <div class="bar-explorer" data-chart="nfl" role="img" aria-label="Interactive bar chart: Rams highest at about 5.2 million dollars, Steelers and Colts lowest at about 2.6 million."></div>
-        <p class="explorer-readout" aria-live="polite">Hover or tap a bar. The <b>top 5</b> teams are highlighted.</p>
+        <div class="bar-explorer" data-chart="nfl" role="img" aria-label="Bar chart: Rams highest at about 5.2 million dollars, Steelers and Colts lowest at about 2.6 million. Use the team selector for individual values."></div>
+        <label class="team-picker" for="nfl-team">Choose a team <select id="nfl-team"><option value="" selected disabled>Team</option></select></label>
+        <p class="explorer-readout" aria-live="polite">Hover or tap a bar, or choose a team. The <b>top 5</b> teams are highlighted.</p>
         <p class="fine">Values (≈) read from the original Tableau chart. One-way ANOVA across teams: p = .0455.</p>
       </div>
     </div>
@@ -146,8 +157,8 @@
       </dl>
       <p class="tools">Tableau · One-way ANOVA · Correlation · 2011–2022 draft data</p>
       <p class="still-use"><span>What I still use</span> Say what a test can and can’t prove before presenting it.</p>
-      <details><summary>More findings &amp; method <span aria-hidden="true">↗</span></summary><div class="case-content">
-        <div class="supporting-artifact"><a href="assets/work/nfl-games-by-round.png" target="_blank" rel="noopener" aria-label="Open full-size chart: games played by draft round"><img src="assets/work/nfl-games-by-round.png" alt="Tableau chart of average games played by draft round" loading="lazy"><span>View full size ↗</span></a></div>
+      <details><summary>More findings &amp; method <span aria-hidden="true">›</span></summary><div class="case-content">
+        <div class="supporting-artifact"><a href="assets/work/nfl-games-by-round.png" target="_blank" rel="noopener" aria-label="View full size: games played by draft round"><img src="assets/work/nfl-games-by-round.png" alt="Tableau chart of average games played by draft round" loading="lazy"><span>View full size <span class="glyph-expand" aria-hidden="true"></span></span></a></div>
         <h4>Teams differ on guarantees</h4><p>Average guaranteed amounts differ significantly by signing team (p = .0455). The Rams, Chargers, Browns, Eagles, and Chiefs spend the most.</p>
         <h4>Draft round matters, with exceptions</h4><p>First-round picks have longer careers on average (p &lt; .0001). Quarterbacks and linebackers are the exception: second-round picks lasted longest.</p>
       </div></details>
@@ -158,8 +169,31 @@
   <!-- 03 · Housing -->
   <li class="project chapter" id="housing-project" data-tags="real-estate sql python dashboards">
     <span class="chapter-node" aria-hidden="true">03</span>
+    <div class="project-copy">
+      <p class="project-meta">03 · REAL ESTATE ANALYTICS · TEAM WAREHOUSE + INDIVIDUAL ANALYSIS</p>
+      <h3>Crime, home values, and a county-level warehouse.</h3>
+      <div class="finding"><strong data-count="8000" data-prefix="+$">+$8,000</strong><p>in average home value per reported crime reduced in Washington County (2020–2023). Benton, Saline, and Faulkner counties each topped +$1,000.</p></div>
+      <dl class="brief">
+        <div><dt>Question</dt><dd>Is crime reduction associated with rising home values across Arkansas counties?</dd></div>
+        <div><dt>My role</dt><dd>Built the individual crime-vs-price analysis; co-built the team’s SQL Server warehouse.</dd></div>
+        <div><dt>Key decision</dt><dd>Moved from property level to county level so every source shared one grain.</dd></div>
+      </dl>
+      <p class="tools">SQL Server · Python (Census API) · Power BI · Dimensional modeling</p>
+      <div class="pipeline" role="group" aria-label="From messy sources to a clean model">
+        <span><b>Messy sources</b>Census API · 15 CSVs</span>
+        <span><b>Load</b>Python</span>
+        <span><b>Model</b>4 fact tables · county &amp; date dims</span>
+        <span><b>Answer</b>Power BI</span>
+      </div>
+      <p class="still-use"><span>What I still use</span> Choose the grain before you join the sources.</p>
+      <details><summary>The data model &amp; limits <span aria-hidden="true">›</span></summary><div class="case-content">
+        <div class="supporting-artifact"><a href="assets/work/arkansas-warehouse.jpeg" target="_blank" rel="noopener" aria-label="View full size: the team’s dimensional data model"><img src="assets/work/arkansas-warehouse.jpeg" alt="Dimensional data model with four fact tables joined through shared county and date dimensions" loading="lazy"><span>View full size <span class="glyph-expand" aria-hidden="true"></span></span></a></div>
+        <h4>Limits</h4><p>Crime reporting is incomplete in some counties, and this is an association, not proof that less crime raises prices.</p>
+      </div></details>
+      <a class="ask-me" href="mailto:jmjessup21@gmail.com?subject=Question%20about%20your%20housing%20warehouse">Ask me about reconciling sources with different grains <span aria-hidden="true">↗</span></a>
+    </div>
     <div class="chapter-media">
-      <a class="evidence-image" href="assets/work/arkansas-crime-home-prices.png" target="_blank" rel="noopener" aria-label="Open full-size chart: year-over-year crime change versus average sale price change by Arkansas county"><img src="assets/work/arkansas-crime-home-prices.png" alt="Scatterplot of year-over-year crime change versus average sale price change across Arkansas counties, in four quadrants" loading="lazy"><span>View full size ↗</span></a>
+      <a class="evidence-image" href="assets/work/arkansas-crime-home-prices.png" target="_blank" rel="noopener" aria-label="View full size: year-over-year crime change versus average sale price change by Arkansas county"><img src="assets/work/arkansas-crime-home-prices.png" alt="Scatterplot of year-over-year crime change versus average sale price change across Arkansas counties, in four quadrants" loading="lazy"><span>View full size <span class="glyph-expand" aria-hidden="true"></span></span></a>
       <button type="button" class="explore-toggle" aria-expanded="false" aria-controls="housing-explore">Explore the data <span aria-hidden="true">＋</span></button>
       <div class="explorer" id="housing-explore" hidden>
         <p class="explorer-title">Tap a county to read the story behind its dot</p>
@@ -175,29 +209,6 @@
         <p class="explorer-readout" aria-live="polite">Top-left is <b>crime down, price up</b>. Tap a numbered dot.</p>
         <p class="fine">County notes are from my individual analysis. This shows an association, not a cause.</p>
       </div>
-    </div>
-    <div class="project-copy">
-      <p class="project-meta">03 · REAL ESTATE ANALYTICS · TEAM WAREHOUSE + INDIVIDUAL ANALYSIS</p>
-      <h3>Crime, home values, and a county-level warehouse.</h3>
-      <div class="finding"><strong data-count="8000" data-prefix="+$">+$8,000</strong><p>in average home value per reported crime reduced in Washington County (2020–2023). Benton, Saline, and Faulkner counties each topped +$1,000.</p></div>
-      <dl class="brief">
-        <div><dt>Question</dt><dd>Is crime reduction associated with rising home values across Arkansas counties?</dd></div>
-        <div><dt>My role</dt><dd>Built the individual crime-vs-price analysis; co-built the team’s SQL Server warehouse.</dd></div>
-        <div><dt>Key decision</dt><dd>Moved from property level to county level so every source shared one grain.</dd></div>
-      </dl>
-      <p class="tools">SQL Server · Python (Census API) · Power BI · Dimensional modeling</p>
-      <div class="pipeline" aria-label="From messy sources to a clean model">
-        <span><b>Messy sources</b>Census API · 15 CSVs</span>
-        <span><b>Load</b>Python</span>
-        <span><b>Model</b>4 fact tables · county &amp; date dims</span>
-        <span><b>Answer</b>Power BI</span>
-      </div>
-      <p class="still-use"><span>What I still use</span> Choose the grain before you join the sources.</p>
-      <details><summary>The data model &amp; limits <span aria-hidden="true">↗</span></summary><div class="case-content">
-        <div class="supporting-artifact"><a href="assets/work/arkansas-warehouse.jpeg" target="_blank" rel="noopener" aria-label="Open full-size image: the team’s dimensional data model"><img src="assets/work/arkansas-warehouse.jpeg" alt="Dimensional data model with four fact tables joined through shared county and date dimensions" loading="lazy"><span>View full size ↗</span></a></div>
-        <h4>Limits</h4><p>Crime reporting is incomplete in some counties, and this is an association, not proof that less crime raises prices.</p>
-      </div></details>
-      <a class="ask-me" href="mailto:jmjessup21@gmail.com?subject=Question%20about%20your%20housing%20warehouse">Ask me about reconciling sources with different grains <span aria-hidden="true">↗</span></a>
     </div>
   </li>
 
@@ -228,8 +239,8 @@
       </dl>
       <p class="tools">SAS Enterprise Miner · Gradient boosting · Neural networks · Decision trees</p>
       <p class="still-use"><span>What I still use</span> Judge a model by what its mistakes cost, not just its accuracy.</p>
-      <details><summary>Drivers, method &amp; limits <span aria-hidden="true">↗</span></summary><div class="case-content">
-        <div class="supporting-artifact"><a href="assets/work/hog-heaven-model-comparison.png" target="_blank" rel="noopener" aria-label="Open full-size table: original model comparison slide"><img src="assets/work/hog-heaven-model-comparison.png" alt="Original model comparison slide with misclassification, false-positive, and false-negative rates" loading="lazy"><span>View full size ↗</span></a></div>
+      <details><summary>Drivers, method &amp; limits <span aria-hidden="true">›</span></summary><div class="case-content">
+        <div class="supporting-artifact"><a href="assets/work/hog-heaven-model-comparison.png" target="_blank" rel="noopener" aria-label="View full size: original model comparison slide"><img src="assets/work/hog-heaven-model-comparison.png" alt="Original model comparison slide with misclassification, false-positive, and false-negative rates" loading="lazy"><span>View full size <span class="glyph-expand" aria-hidden="true"></span></span></a></div>
         <h4>What drove the prediction</h4><p>Recency of last purchase, interest in accessories, and email opens and clicks. Customers who engage recently are the ones who convert.</p>
         <h4>Limits</h4><p>The model predicts survey interest, not observed purchases. The next step would be measuring real conversion before rollout.</p>
       </div></details>
@@ -240,10 +251,27 @@
   <!-- 05 · MedAI -->
   <li class="project chapter" id="medai-project" data-tags="ai healthcare python">
     <span class="chapter-node" aria-hidden="true">05</span>
+    <div class="project-copy">
+      <p class="project-meta">05 · APPLIED AI · GRADUATE TEAM PROJECT · 2026</p>
+      <h3>An AI assistant that answers data questions in plain English.</h3>
+      <div class="finding"><strong data-count="322574">322,574</strong><p>inpatient encounters made queryable in plain English, with shared metric definitions so every answer follows the same rules.</p></div>
+      <dl class="brief">
+        <div><dt>Question</dt><dd>Can a non-analyst ask questions of a large dataset and get correct, consistent answers?</dd></div>
+        <div><dt>My role</dt><dd>AI-assisted development of the Flask app, and testing of the visualization version.</dd></div>
+        <div><dt>Key decision</dt><dd>Wrote metric definitions into the assistant so it labels observed stay separately from external benchmarks.</dd></div>
+      </dl>
+      <p class="tools">Python · Flask · Claude API · Pivot tables · AI evaluation</p>
+      <p class="still-use"><span>What I still use</span> An AI answer is only as trustworthy as the definitions and checks behind it.</p>
+      <details><summary>The interface &amp; what we caught <span aria-hidden="true">›</span></summary><div class="case-content">
+        <div class="supporting-artifact"><a href="assets/work/medai-interface.png" target="_blank" rel="noopener" aria-label="View full size: the assistant’s chat interface"><img src="assets/work/medai-interface.png" alt="The assistant’s chat interface" loading="lazy"><span>View full size <span class="glyph-expand" aria-hidden="true"></span></span></a></div>
+        <h4>A useful correction</h4><p>Early on, the assistant compared observed length of stay with benchmarks that measure something different. We wrote the distinction into its reference files and documented questions the data can’t support, such as readmission rates. The replay above shows the fix working on an unprompted question.</p>
+      </div></details>
+      <a class="ask-me" href="mailto:jmjessup21@gmail.com?subject=Question%20about%20your%20AI%20analytics%20assistant">Ask me how we tested an AI’s answers against the raw data <span aria-hidden="true">↗</span></a>
+    </div>
     <div class="chapter-media">
-      <div class="chat-replay" aria-label="Replay of a real test question to the assistant">
-        <div class="chat-head"><span class="status-dot"></span> Test log replay · fictional course data <button type="button" class="replay-button">Replay ↻</button></div>
-        <div class="chat-body" aria-live="polite">
+      <div class="chat-replay" role="group" aria-label="Replay of a real test question to the assistant">
+        <div class="chat-head"><span class="status-dot"></span> Test log replay · fictional course data <button type="button" class="replay-button">Replay <span aria-hidden="true">↻</span></button></div>
+        <div class="chat-body">
           <div class="msg user" data-step="0">What is the average length of stay by facility?</div>
           <div class="msg bot" data-step="1">Here’s the average length of stay <b>(Observed ALOS)</b> by facility: 12 facilities, 49,000 discharges.
             <table><thead><tr><th>Facility</th><th>Discharges</th><th>Avg LOS</th></tr></thead><tbody>
@@ -259,31 +287,14 @@
         </div>
       </div>
     </div>
-    <div class="project-copy">
-      <p class="project-meta">05 · APPLIED AI · GRADUATE TEAM PROJECT · 2026</p>
-      <h3>An AI assistant that answers data questions in plain English.</h3>
-      <div class="finding"><strong data-count="322574">322,574</strong><p>inpatient encounters made queryable in plain English, with shared metric definitions so every answer follows the same rules.</p></div>
-      <dl class="brief">
-        <div><dt>Question</dt><dd>Can a non-analyst ask questions of a large dataset and get correct, consistent answers?</dd></div>
-        <div><dt>My role</dt><dd>AI-assisted development of the Flask app, and testing of the visualization version.</dd></div>
-        <div><dt>Key decision</dt><dd>Wrote metric definitions into the assistant so it labels observed stay separately from external benchmarks.</dd></div>
-      </dl>
-      <p class="tools">Python · Flask · Claude API · Pivot tables · AI evaluation</p>
-      <p class="still-use"><span>What I still use</span> An AI answer is only as trustworthy as the definitions and checks behind it.</p>
-      <details><summary>The interface &amp; what we caught <span aria-hidden="true">↗</span></summary><div class="case-content">
-        <div class="supporting-artifact"><a href="assets/work/medai-interface.png" target="_blank" rel="noopener" aria-label="Open full-size image: the assistant’s chat interface"><img src="assets/work/medai-interface.png" alt="The assistant’s chat interface" loading="lazy"><span>View full size ↗</span></a></div>
-        <h4>A useful correction</h4><p>Early on, the assistant compared observed length of stay with benchmarks that measure something different. We wrote the distinction into its reference files and documented questions the data can’t support, such as readmission rates. The replay above shows the fix working on an unprompted question.</p>
-      </div></details>
-      <a class="ask-me" href="mailto:jmjessup21@gmail.com?subject=Question%20about%20your%20AI%20analytics%20assistant">Ask me how we tested an AI’s answers against the raw data <span aria-hidden="true">↗</span></a>
-    </div>
   </li>
 
   <!-- 06 · Systems -->
   <li class="project chapter" id="systems-project" data-tags="systems">
     <span class="chapter-node" aria-hidden="true">06</span>
     <div class="chapter-media">
-      <a class="evidence-image" href="assets/work/time-tracking-interface.png" target="_blank" rel="noopener" aria-label="Open full-size image: time-tracking interface prototype"><img src="assets/work/time-tracking-interface.png" alt="Time-tracking interface prototype with Clock In, Submit Time, Payroll, Add Time and Clock Out controls" loading="lazy"><span>View full size ↗</span></a>
-      <div class="flow" aria-label="Time-entry workflow with exception paths">
+      <a class="evidence-image" href="assets/work/time-tracking-interface.png" target="_blank" rel="noopener" aria-label="View full size: time-tracking interface prototype"><img src="assets/work/time-tracking-interface.png" alt="Time-tracking interface prototype with Clock In, Submit Time, Payroll, Add Time and Clock Out controls" loading="lazy"><span>View full size <span class="glyph-expand" aria-hidden="true"></span></span></a>
+      <div class="flow" role="group" aria-label="Time-entry workflow with exception paths">
         <p class="explorer-title">The time-entry workflow</p>
         <ol>
           <li>Clock in</li>
@@ -304,8 +315,8 @@
       </dl>
       <p class="tools">Requirements · Use cases · CRUD matrix · Activity diagrams · UI prototyping</p>
       <p class="still-use"><span>What I still use</span> A workflow isn’t done until its exceptions are.</p>
-      <details><summary>Scope &amp; targets <span aria-hidden="true">↗</span></summary><div class="case-content">
-        <div class="supporting-artifact"><a href="assets/work/time-tracking-calendar.png" target="_blank" rel="noopener" aria-label="Open full-size image: day-selection screen"><img src="assets/work/time-tracking-calendar.png" alt="Annotated day-selection screen from the time-tracking prototype" loading="lazy"><span>View full size ↗</span></a></div>
+      <details><summary>Scope &amp; targets <span aria-hidden="true">›</span></summary><div class="case-content">
+        <div class="supporting-artifact"><a href="assets/work/time-tracking-calendar.png" target="_blank" rel="noopener" aria-label="View full size: day-selection screen"><img src="assets/work/time-tracking-calendar.png" alt="Annotated day-selection screen from the time-tracking prototype" loading="lazy"><span>View full size <span class="glyph-expand" aria-hidden="true"></span></span></a></div>
         <h4>Scope</h4><p>Project managers, employees, vendors, customers, HR, and finance, covering time entry, supervisor approval, cost assignment, invoicing, and payroll integration.</p>
         <h4>Targets set</h4><p>Cut information-retrieval time by 90% and labor-cost errors by 50%. These were design goals for the proposal, not measured results.</p>
       </div></details>
@@ -321,20 +332,20 @@
   <div class="section-heading"><div><p class="eyebrow">02 / CURRENTLY BUILDING</p><h2 id="in-progress-title">On the workbench.<br><em>A glimpse of what’s next.</em></h2></div><p>Four projects in progress, from clinic AI to interactive spaces and basketball. One sneak peek each, with the current stage and next steps.</p></div>
   <div class="project-grid progress-grid">
     <article class="project progress-project" id="clinic-ai-project">
-      <figure class="progress-preview"><a class="evidence-image" href="preview-clinic-ai.svg" target="_blank" rel="noopener" aria-label="Open sneak peek: Private AI for the clinic, built around its boundaries."><img src="preview-clinic-ai.svg" width="1200" height="750" alt="Concept architecture for staff, local AI, approved sources, and report review; no patient data." loading="lazy"><span>View sneak peek ↗</span></a><figcaption>Planned architecture · concept preview</figcaption></figure>
-      <div class="project-copy"><p class="project-meta">ENTERPRISE AI / PHYSICAL THERAPY</p><h3>Private AI for the clinic, built around its boundaries.</h3><p>Developing an enterprise AI workspace for PT clinic knowledge and operational reporting, with company-controlled processing and a deliberate path toward HIPAA readiness.</p><p class="progress-stage"><span class="status-dot" aria-hidden="true"></span>In progress · System architecture and privacy planning</p><details><summary>Current scope &amp; next steps <span aria-hidden="true">↗</span></summary><div class="case-content"><p>Role-based access, evidence-backed answers, auditability, and reviewed exports are design priorities. Compliance validation and production deployment remain future milestones.</p></div></details></div>
+      <figure class="progress-preview"><a class="evidence-image" href="preview-clinic-ai.svg" target="_blank" rel="noopener" aria-label="View sneak peek: Private AI for the clinic, built around its boundaries."><img src="preview-clinic-ai.svg" width="1200" height="750" alt="Concept architecture for staff, local AI, approved sources, and report review; no patient data." loading="lazy"><span>View sneak peek <span class="glyph-expand" aria-hidden="true"></span></span></a><figcaption>Planned architecture · concept preview</figcaption></figure>
+      <div class="project-copy"><p class="project-meta">ENTERPRISE AI / PHYSICAL THERAPY</p><h3>Private AI for the clinic, built around its boundaries.</h3><p>Developing an enterprise AI workspace for PT clinic knowledge and operational reporting, with company-controlled processing and a deliberate path toward HIPAA readiness.</p><p class="progress-stage"><span class="status-dot" aria-hidden="true"></span>In progress · System architecture and privacy planning</p><details><summary>Current scope &amp; next steps <span aria-hidden="true">›</span></summary><div class="case-content"><p>Role-based access, evidence-backed answers, auditability, and reviewed exports are design priorities. Compliance validation and production deployment remain future milestones.</p></div></details></div>
     </article>
     <article class="project progress-project" id="realtor-walkthrough-project">
-      <figure class="progress-preview"><a class="evidence-image" href="preview-realtor-plan.svg" target="_blank" rel="noopener" aria-label="Open sneak peek: Don’t just tour the home. See what it could become."><img src="preview-realtor-plan.svg" width="1200" height="750" alt="Original lower-level planning schematic used for the 3D walkthrough. The dimensions and layout are inferred, not a surveyed plan." loading="lazy"><span>View sneak peek ↗</span></a><figcaption>Original prototype schematic · inferred dimensions</figcaption></figure>
-      <div class="project-copy"><p class="project-meta">INTERACTIVE 3D / REAL ESTATE</p><h3>Don’t just tour the home. See what it could become.</h3><p>Building a browser-based home walkthrough that helps buyers and realtors explore a property and imagine changes to finishes, furniture, and room use.</p><p class="progress-stage"><span class="status-dot" aria-hidden="true"></span>In progress · Walkthrough prototype</p><details><summary>Current scope &amp; next steps <span aria-hidden="true">↗</span></summary><div class="case-content"><p>The current work includes an inferred two-level schematic and navigable 3D model. Finish and object experiments run in a separate synthetic sandbox; measured plans and property-wide editing come next.</p></div></details></div>
+      <figure class="progress-preview"><a class="evidence-image" href="preview-realtor-plan.svg" target="_blank" rel="noopener" aria-label="View sneak peek: Don’t just tour the home. See what it could become."><img src="preview-realtor-plan.svg" width="1200" height="750" alt="Original lower-level planning schematic used for the 3D walkthrough. The dimensions and layout are inferred, not a surveyed plan." loading="lazy"><span>View sneak peek <span class="glyph-expand" aria-hidden="true"></span></span></a><figcaption>Original prototype schematic · inferred dimensions</figcaption></figure>
+      <div class="project-copy"><p class="project-meta">INTERACTIVE 3D / REAL ESTATE</p><h3>Don’t just tour the home. See what it could become.</h3><p>Building a browser-based home walkthrough that helps buyers and realtors explore a property and imagine changes to finishes, furniture, and room use.</p><p class="progress-stage"><span class="status-dot" aria-hidden="true"></span>In progress · Walkthrough prototype</p><details><summary>Current scope &amp; next steps <span aria-hidden="true">›</span></summary><div class="case-content"><p>The current work includes an inferred two-level schematic and navigable 3D model. Finish and object experiments run in a separate synthetic sandbox; measured plans and property-wide editing come next.</p></div></details></div>
     </article>
     <article class="project progress-project" id="basketball-game-project">
-      <figure class="progress-preview"><a class="evidence-image" href="preview-basketball.png" target="_blank" rel="noopener" aria-label="Open sneak peek: A front office where decisions start with the player."><img src="preview-basketball.png" width="1200" height="750" alt="Original Austin Coyotes player-profile design reference for fictional player Marcus Ellison; design preview rather than gameplay." loading="lazy"><span>View sneak peek ↗</span></a><figcaption>Original player-profile design reference · fictional data</figcaption></figure>
-      <div class="project-copy"><p class="project-meta">BASKETBALL / FRANCHISE MANAGEMENT</p><h3>A front office where decisions start with the player.</h3><p>Building a basketball franchise game around roster decisions, player evidence, and staff context. The current milestone is the management interface, with playable simulation still ahead.</p><p class="progress-stage"><span class="status-dot" aria-hidden="true"></span>In progress · Interface prototype</p><details><summary>Current scope &amp; next steps <span aria-hidden="true">↗</span></summary><div class="case-content"><p>Roster search, filtering, player profiles, and browser-local notes are implemented. This sneak peek is the original visual direction; the next milestone is a watchable possession and management loop.</p></div></details></div>
+      <figure class="progress-preview"><a class="evidence-image" href="preview-basketball.png" data-viewer-src="preview-basketball.webp" target="_blank" rel="noopener" aria-label="View sneak peek: A front office where decisions start with the player."><img src="preview-basketball.webp" width="1200" height="750" alt="Original Austin Coyotes player-profile design reference for fictional player Marcus Ellison; design preview rather than gameplay." loading="lazy"><span>View sneak peek <span class="glyph-expand" aria-hidden="true"></span></span></a><figcaption>Original player-profile design reference · fictional data</figcaption></figure>
+      <div class="project-copy"><p class="project-meta">BASKETBALL / FRANCHISE MANAGEMENT</p><h3>A front office where decisions start with the player.</h3><p>Building a basketball franchise game around roster decisions, player evidence, and staff context. The current milestone is the management interface, with playable simulation still ahead.</p><p class="progress-stage"><span class="status-dot" aria-hidden="true"></span>In progress · Interface prototype</p><details><summary>Current scope &amp; next steps <span aria-hidden="true">›</span></summary><div class="case-content"><p>Roster search, filtering, player profiles, and browser-local notes are implemented. This sneak peek is the original visual direction; the next milestone is a watchable possession and management loop.</p></div></details></div>
     </article>
     <article class="project progress-project" id="retail-ar-project">
-      <figure class="progress-preview"><a class="evidence-image" href="preview-retail-ar.svg" target="_blank" rel="noopener" aria-label="Open sneak peek: See the space before rearranging the store."><img src="preview-retail-ar.svg" width="1200" height="750" alt="Concept drawing of a small shop with fixtures, a circulation route, and a proposed phone-based AR overlay." loading="lazy"><span>View sneak peek ↗</span></a><figcaption>Retail layout concept · illustrative, not a device capture</figcaption></figure>
-      <div class="project-copy"><p class="project-meta">AUGMENTED REALITY / SMALL RETAIL</p><h3>See the space before rearranging the store.</h3><p>Exploring AR building layouts for small retail businesses: visualize fixtures, product displays, and customer flow before making physical changes to a shop.</p><p class="progress-stage"><span class="status-dot" aria-hidden="true"></span>In progress · Concept and requirements</p><details><summary>Current scope &amp; next steps <span aria-hidden="true">↗</span></summary><div class="case-content"><p>A retail-focused direction using similar spatial technology to the realtor project. Store measurements, spatial calibration, and device-based AR are future implementation work.</p></div></details></div>
+      <figure class="progress-preview"><a class="evidence-image" href="preview-retail-ar.svg" target="_blank" rel="noopener" aria-label="View sneak peek: See the space before rearranging the store."><img src="preview-retail-ar.svg" width="1200" height="750" alt="Concept drawing of a small shop with fixtures, a circulation route, and a proposed phone-based AR overlay." loading="lazy"><span>View sneak peek <span class="glyph-expand" aria-hidden="true"></span></span></a><figcaption>Retail layout concept · illustrative, not a device capture</figcaption></figure>
+      <div class="project-copy"><p class="project-meta">AUGMENTED REALITY / SMALL RETAIL</p><h3>See the space before rearranging the store.</h3><p>Exploring AR building layouts for small retail businesses: visualize fixtures, product displays, and customer flow before making physical changes to a shop.</p><p class="progress-stage"><span class="status-dot" aria-hidden="true"></span>In progress · Concept and requirements</p><details><summary>Current scope &amp; next steps <span aria-hidden="true">›</span></summary><div class="case-content"><p>A retail-focused direction using similar spatial technology to the realtor project. Store measurements, spatial calibration, and device-based AR are future implementation work.</p></div></details></div>
     </article>
   </div>
 </section>
@@ -343,8 +354,9 @@
 
 <section class="wrap experience-section" id="experience" aria-labelledby="experience-title"><div class="section-heading"><div><p class="eyebrow">04 / EXPERIENCE &amp; EDUCATION</p><h2 id="experience-title">A foundation in<br><em>data and people.</em></h2></div><a class="text-link" href="assets/Jackson-Jessup-Resume.pdf" target="_blank" rel="noopener">View resume <span aria-hidden="true">↗</span></a></div><div class="timeline"><div class="timeline-row"><p class="date">APR 2025 — PRESENT</p><div><h3>Data Analyst Intern</h3><p>Rise Physical Therapy</p></div><p>30+ dashboards shipped, year-over-year reporting, Excel automation, and privacy-aware AI workflows.</p></div><div class="timeline-row"><p class="date">OCT 2021 — FEB 2026</p><div><h3>Student Manager &amp; Facility Supervisor</h3><p>University Recreation, University of Arkansas</p></div><p>Staff supervision, facility operations, event support, and emergency communication.</p></div><div class="timeline-row"><p class="date">MAY 2024 — MAY 2025</p><div><h3>Student Employee Advisory Board Chair</h3><p>University Recreation · Member since April 2023</p></div><p>Student advocacy, board leadership, strategic planning, and staff initiatives.</p></div><div class="timeline-row"><p class="date">MAY 2021 — AUG 2022</p><div><h3>Business Operations Intern</h3><p>Natural State Health Center &amp; TruBalance</p></div><p>Scheduling across four service lines, digital records organization, and front-desk operations.</p></div></div><div class="education-grid"><div><p class="eyebrow">IN PROGRESS / EXPECTED MAY 2027</p><h3>Professional Master’s<br>of Information Systems</h3><p>Concentration: Emerging Technologies</p></div><div><p class="eyebrow">AWARDED / MAY 2025</p><h3>Bachelor of Science<br>in Business Administration</h3><p>Information Systems — Business Analytics<br>Minor in Finance</p></div><p class="school">University of Arkansas<br><strong>Sam M. Walton College of Business</strong></p></div></section>
 
-<section class="wrap toolkit-section" aria-labelledby="toolkit-title"><p class="eyebrow">05 / HOW I WORK</p><h2 id="toolkit-title">Tools with <em>a purpose.</em></h2><div class="toolkit"><div><h3>Understand the data</h3><p>SQL · SQL Server · Python · Excel<br>Data preparation · Metric definitions<br>Validation · Dimensional modeling</p></div><div><h3>Make it understandable</h3><p>Power BI · Tableau · Dashboards<br>Year-over-year &amp; comparative reporting<br>Business recommendations</p></div><div><h3>Build with context</h3><p>AI-assisted development · GitHub<br>Requirements · Use cases<br>Privacy-aware workflow design</p></div></div><p class="research-note">Industries I’ve worked in: healthcare operations, sports, real estate, retail, construction, and freight logistics (ArcBest digital-billing case study).</p></section>
+<section class="wrap toolkit-section" aria-labelledby="toolkit-title"><p class="eyebrow">05 / HOW I WORK</p><h2 id="toolkit-title">Tools with <em>a purpose.</em></h2><div class="toolkit"><div><h3>Understand the data</h3><p>SQL · SQL Server · Python · Excel<br>Data preparation · Metric definitions<br>Validation · Dimensional modeling</p></div><div><h3>Make it understandable</h3><p>Power BI · Tableau · Dashboards<br>Year-over-year &amp; comparative reporting<br>Business recommendations</p></div><div><h3>Build with context</h3><p>AI-assisted development · GitHub<br>Requirements · Use cases<br>Privacy-aware workflow design</p></div></div><p class="research-note"><strong>Worked in:</strong> healthcare operations (Rise Physical Therapy) and university recreation (UREC).<br><strong>Projects for:</strong> sports, real estate, retail, construction, and freight logistics (ArcBest digital-billing case study).</p></section>
 
-<section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap"><p class="eyebrow">LET’S TALK ABOUT WHAT’S NEXT</p><div class="contact-grid"><h2 id="contact-title">Have messy data<br>that needs <em>a clear answer?</em></h2><div><p>I’d welcome a conversation about data analyst, BI, and business systems roles, in Nashville or remote.</p><a class="contact-email" href="mailto:jmjessup21@gmail.com">jmjessup21@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://www.linkedin.com/in/jackson-jessup-32b0a821b/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/jmjessup21" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="assets/Jackson-Jessup-Resume.pdf" target="_blank" rel="noopener">Resume ↗</a></div></div></div><footer><span>© 2026 Jackson Jessup</span><a href="card.html">Digital card ↗</a><a href="links.html">Quick links ↗</a><a href="#home">Back to top ↑</a></footer><p class="design-credit">Design adapted from <a href="https://www.figma.com/community/file/1351551318943737601/personal-website-portfolio" target="_blank" rel="noopener noreferrer">Mahmood Fazile’s portfolio template</a> (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>).</p></div></section>
+<section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap"><p class="eyebrow">LET’S TALK ABOUT WHAT’S NEXT</p><div class="contact-grid"><h2 id="contact-title">Have messy data<br>that needs <em>a clear answer?</em></h2><div><p>I’d welcome a conversation about data analyst, BI, and business systems roles, in Nashville or remote.</p><a class="contact-email" href="mailto:jmjessup21@gmail.com">jmjessup21@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://www.linkedin.com/in/jackson-jessup-32b0a821b/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/jmjessup21" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="assets/Jackson-Jessup-Resume.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a></div><nav class="handoff" aria-label="Take my details with you"><p class="handoff-label">On your phone</p><a href="card.html"><span><strong>Digital business card</strong><small>Save my contact or share my card</small></span><span aria-hidden="true">→</span></a><a href="links.html"><span><strong>Quick links</strong><small>Email, resume, LinkedIn, GitHub, and portfolio</small></span><span aria-hidden="true">→</span></a></nav></div></div></div></section>
 </main>
+<footer class="site-footer"><div class="wrap"><div class="footer-bar"><span>© 2026 Jackson Jessup</span><a href="card.html">Digital card <span aria-hidden="true">→</span></a><a href="links.html">Quick links <span aria-hidden="true">→</span></a><a href="#home">Back to top <span aria-hidden="true">↑</span></a></div><p class="design-credit">Design adapted from <a href="https://www.figma.com/community/file/1351551318943737601/personal-website-portfolio" target="_blank" rel="noopener noreferrer">Mahmood Fazile’s portfolio template</a> (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>).</p></div></footer>
 </body></html>

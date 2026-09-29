@@ -15,7 +15,7 @@
 .chapter[hidden]{display:none}
 .chapter-node{position:absolute;left:-64px;top:24px;width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:var(--paper);border:1px solid var(--accent);color:var(--accent);font-size:13px;letter-spacing:.04em;z-index:1}
 .chapter:not(.featured){display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);align-items:start}
-.chapter:not(.featured):nth-child(odd) .chapter-media{order:2;border-left:1px solid var(--line);border-right:0}
+.chapter:not(.featured):nth-child(odd) .chapter-media{border-left:1px solid var(--line);border-right:0}
 .chapter-media{border-right:1px solid var(--line);background:#25211c;min-height:100%;display:flex;flex-direction:column}
 .chapter .project-copy{padding:28px 30px 22px}
 .chapter .evidence-image{border-bottom:1px solid var(--line)}
@@ -150,4 +150,128 @@
   .bridge{margin-left:0;font-size:19px}
   .hotspot{width:22px;height:22px;font-size:11px}
 }
+/* Interaction and reading refinements. */
+.header nav a.is-current:not(.nav-contact){color:var(--ink);text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:9px}
+.header nav .nav-contact.is-current{background:#3a2e25}
+.menu-toggle,.filters button,.segmented button,.explore-toggle,.replay-button{min-height:44px}
+.filters{display:grid;grid-template-columns:1fr;align-items:start;gap:12px;margin-bottom:12px}
+.filters .filter-all{justify-self:start}
+.filter-group{display:grid;grid-template-columns:78px minmax(0,1fr);align-items:center;gap:14px}
+.filter-label{margin:0}
+.filter-rail{display:flex;gap:8px;flex-wrap:wrap;min-width:0}
+.filter-rail button{white-space:nowrap}
+.filter-status{border-top:1px solid var(--line);padding-top:12px;margin-bottom:28px}
+.chapter{transition:border-color .2s,box-shadow .2s}
+.chapter:focus-within{border-color:#9c7658}
+.chapter .project-copy>p:not(.project-meta):not(.tools):not(.still-use){font-size:14px}
+.chapter .case-content{font-size:14px;line-height:1.75}
+.chapter .case-content h4{font-size:14px}
+.chapter summary{font-size:13px;min-height:48px}
+.chapter .evidence-image,.progress-preview .evidence-image{transition:filter .2s}
+.chapter .evidence-image:hover,.progress-preview .evidence-image:hover{filter:brightness(1.04)}
+.team-picker{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:12px;font-size:13px;color:var(--muted)}
+.team-picker select{min-height:44px;min-width:180px;max-width:65%;padding:8px 12px;border:1px solid var(--line);border-radius:4px;background:var(--surface);color:var(--ink);font:inherit}
+.team-picker select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.hotspot:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+@media(hover:hover) and (pointer:fine){.chapter:hover{border-color:#7d654f;box-shadow:0 12px 32px #100c0940}}
+@media(max-width:760px){
+  .filters{gap:10px}
+  .filter-group{grid-template-columns:minmax(0,1fr);gap:5px}
+  .filter-label{margin:0}
+  .filter-rail{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x proximity;scrollbar-color:#8a6a50 transparent;margin-inline:-20px;padding:1px 20px 9px}
+  .filter-rail button{flex:0 0 auto;scroll-snap-align:start}
+  .filters button{padding:8px 14px}
+  .filter-status{margin-bottom:22px}
+  .chapter .case-content{font-size:14px}
+}
 @media print{.work-path{padding-left:0}.work-path::before,.chapter-node,.filters,.filter-status,.explore-toggle,.explorer,.segmented,.replay-button,.bridge{display:none}.reveal{opacity:1;transform:none}.chapter:not(.featured){display:block}}
+/* Work at a glance: six jump links that mirror the chapters and follow the filters. */
+.work-index{margin:-10px 0 34px}
+.work-index ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.work-index li[hidden]{display:none}
+.work-index a{display:flex;flex-direction:column;gap:4px;height:100%;padding:14px 16px 15px;border:1px solid var(--line);border-radius:5px;background:#26221d;text-decoration:none;transition:border-color .2s,background .2s}
+.work-index a:hover{border-color:#9c7658;background:#2e2822}
+.work-index a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wi-top{display:flex;gap:10px;align-items:baseline;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.wi-num{color:var(--accent);font-variant-numeric:tabular-nums}
+.wi-finding{font-size:21px;line-height:1.2;font-weight:600;letter-spacing:-.02em;color:var(--accent)}
+.wi-title{font-size:13px;line-height:1.45;color:var(--ink)}
+.chapter:focus{outline:none}
+.chapter:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+/* "Ask me" links stay fully legible; hover adds an underline instead of revealing them. */
+@media(hover:hover) and (pointer:fine){.chapter .ask-me{opacity:1}}
+@media(max-width:1100px){.work-index ol{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+  .work-index{margin:-6px 0 26px}
+  .work-index ol{gap:8px}
+  .work-index a{padding:12px 13px}
+  .wi-top{font-size:12px;letter-spacing:.06em;gap:7px}
+  .wi-finding{font-size:18px}
+  .wi-title{display:none}
+}
+@media print{.work-index{display:none}}
+/* Evidence viewer */
+.lightbox{width:min(1180px,calc(100vw - 32px));max-width:none;max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);padding:0;border:1px solid #75563f;border-radius:6px;background:var(--paper);color:var(--ink);overflow:hidden}
+.lightbox[open]{display:flex;flex-direction:column}
+.lightbox::backdrop{background:#0d0b09d9}
+.lightbox-bar{display:flex;align-items:center;gap:10px;padding:10px 12px;border-bottom:1px solid var(--line)}
+.lightbox-bar button,.lightbox-bar a{min-height:44px;display:inline-flex;align-items:center;gap:8px;padding:0 16px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink);font-size:13px;text-decoration:none}
+.lightbox-bar button:hover,.lightbox-bar a:hover{border-color:var(--accent)}
+.lightbox-zoom[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+.lightbox-close{margin-left:auto}
+.lightbox-bar :focus-visible,.lightbox-stage:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.lightbox-stage{flex:1 1 auto;min-height:0;overflow:auto;background:#f5f4f0;display:grid;place-items:center;padding:14px}
+.lightbox-stage img{display:block;max-width:100%;max-height:calc(100dvh - 190px);width:auto;height:auto;object-fit:contain}
+.lightbox.actual .lightbox-stage{place-items:start}
+.lightbox.actual .lightbox-stage img{max-width:none;max-height:none}
+.lightbox-caption{padding:12px 16px 14px;font-size:13px;line-height:1.5;color:var(--muted);border-top:1px solid var(--line)}
+@media(prefers-reduced-motion:no-preference){.lightbox[open]{animation:lightbox-in .18s ease-out}@keyframes lightbox-in{from{opacity:0;transform:translateY(8px)}}}
+@media(max-width:760px){.lightbox{width:calc(100vw - 16px);max-height:calc(100dvh - 16px)}.lightbox-bar{flex-wrap:wrap;gap:8px;padding:8px}.lightbox-bar button,.lightbox-bar a{padding:0 12px;font-size:12px}.lightbox-stage{padding:8px}.lightbox-stage img{max-height:calc(100dvh - 200px)}}
+@media(max-width:760px){.wi-top{display:block}.wi-num{margin-right:6px}}
+/* Keep the path's grid items from growing past narrow (320px) screens. */
+.work-path{grid-template-columns:minmax(0,1fr)}
+@media(max-width:760px){.featured-top{grid-template-columns:minmax(0,1fr)}.featured .featured-stat{flex-wrap:wrap;column-gap:14px;row-gap:0}}
+@media(max-width:360px){.featured .featured-stat strong{font-size:72px}}
+
+/* Review fixes (2026-09-29). */
+/* P1-1: the expand glyph is drawn by CSS with empty alt text, so it isn't counted as part of the visible label. */
+.glyph-expand::after{content:"\2922";content:"\2922" / ""}
+/* P3-13: the "Explore" marker in the intro is a reference, not a button. */
+.inline-chip{border-style:dashed;cursor:default}
+/* P2-1: empty state when an Industry + Skill combination has no work. */
+.filter-empty{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 20px;margin:0 0 34px;padding:18px 20px;border:1px dashed var(--line);border-radius:5px;background:#26221d}
+.filter-empty p{font-size:14px;color:var(--ink)}
+.filter-reset{min-height:44px;background:transparent;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:8px 16px;font-size:13px}
+.filter-reset:hover{background:#3a2e25}
+/* P3-9: Housing and MedAI now put the copy first in the DOM; the media column stays on the right on desktop. */
+.chapter:not(.featured) .project-copy+.chapter-media{border-left:1px solid var(--line);border-right:0}
+@media(max-width:1100px){.chapter:not(.featured) .project-copy+.chapter-media{border-left:0;border-bottom:0;border-top:1px solid var(--line)}}
+/* P3-4: a dark focus ring reads on the light chart. */
+.hotspot:focus-visible{outline-color:#211e1a}
+/* P3-3: the page doesn't scroll behind the open viewer. */
+html:has(dialog.lightbox[open]){overflow:hidden}
+/* P2-4: previous / next and the "n of N" counter. */
+.lightbox-foot{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:10px 14px;padding:10px 12px;border-top:1px solid var(--line)}
+.lightbox-foot .lightbox-caption{padding:0;border:0}
+.lightbox-foot button{min-height:44px;display:inline-flex;align-items:center;gap:8px;padding:0 16px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink);font-size:13px}
+.lightbox-foot button:hover{border-color:var(--accent)}
+.lightbox-foot :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.lightbox-count{display:inline-block;margin-right:10px;color:var(--accent);font-variant-numeric:tabular-nums;white-space:nowrap}
+.lightbox-note{display:block;margin-top:2px;font-size:12px;color:var(--muted)}
+.lightbox-note[hidden]{display:none}
+.lightbox-stage img{max-height:calc(100dvh - 210px)}
+@media(max-width:760px){
+  .lightbox-foot{grid-template-columns:1fr 1fr;padding:8px}
+  .lightbox-foot .lightbox-caption{grid-column:1/-1;order:-1;padding:2px 4px 0}
+  .lightbox-foot button{justify-content:center;padding:0 12px;font-size:12px}
+  .lightbox-stage img{max-height:calc(100dvh - 280px)}
+  /* P2-3: rails start aligned with the labels, and a fade hints at the chips beyond the edge. */
+  .filter-rail{scroll-padding-inline:20px;--fade-l:0px;--fade-r:48px;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 var(--fade-l),#000 calc(100% - var(--fade-r)),transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 var(--fade-l),#000 calc(100% - var(--fade-r)),transparent 100%)}
+  .filter-rail.scrolled{--fade-l:28px}
+  .filter-rail.at-end{--fade-r:0px}
+  /* P2-6: hotspots meet the 24px minimum without overlapping their neighbours. */
+  .hotspot{width:24px;height:24px;font-size:12px}
+  /* P3-8: the metric control stays on one row. */
+  .segmented.small{display:flex;flex-wrap:nowrap}
+  .segmented.small button{flex:1 1 auto;padding:6px 8px;line-height:1.25}
+}
